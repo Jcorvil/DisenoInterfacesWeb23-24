@@ -1,0 +1,66 @@
+.container {
+    height: 100vh; /* Significa que la clase ocupe el X% de la pantalla. Con 100vh decimos que ocupe el 100% de la pantalla vertical */
+    margin: 10px;
+    padding: 10px;
+    overflow: auto; /*Si algo se desborda, se "recorta" automáticamente*/
+
+    background-color: #3b3b3b;
+}
+
+
+.divCabecera {
+    height: 100px; 
+    margin: 10px;
+
+    background-color: #abe4f5;
+}
+
+.divPrincipal {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Una fracción o una parte del todo en el que está contenido. repite X veces la fracción (4 veces una fracción)*/
+
+    height: 100%;
+    margin: 10px;
+
+    background-color: antiquewhite;
+}
+
+.zonaNavegacion {
+    display: flex;
+    flex-direction: column; /*Le decimos que los elementos se organicen en una columna*/
+    justify-content: flex-start;
+
+    background-color: rgb(176, 223, 182);
+
+}
+
+.zonaNavegacion div { /*Al poner 'div', lo que haya dentro de la clase se aplica únicamente a los <div> de dentro de zonaContenido*/
+    width: 1fr;
+    min-height: 50px;
+    margin: 10px;
+    padding-left: 15px;
+    padding-right: 5px;
+    border-radius: 10px;
+
+    background-color: #55c276;
+}
+
+.zonaNavegacion div:hover { /*hover hace que, cuando el cursor pase por encima, ocurra algo (por ejemplo que cambie de color o se ilumine)*/
+    background-color: #429e5e;
+}
+
+
+.zonaContenido {
+    grid-column: 2/5; /*Dice que ocupe de las líneas verticales 2 a la 5. Estas líneas se determinan con el grid-template de .divPrincipal. Al estar dividido en 4 fracciones, tiene 5 líneas verticales*/
+    margin: 5px;
+    padding: 5px;
+
+    border-radius: 10px;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+
+    background-color: rgb(245, 212, 169);
+                
+}
