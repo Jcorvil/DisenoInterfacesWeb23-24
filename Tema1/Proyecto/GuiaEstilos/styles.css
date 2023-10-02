@@ -15,6 +15,14 @@
     background-color: #abe4f5;
 }
 
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 20%;
+    
+}
+
 .divPrincipal {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Una fracción o una parte del todo en el que está contenido. repite X veces la fracción (4 veces una fracción)*/
