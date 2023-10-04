@@ -4,15 +4,21 @@
     padding: 10px;
     overflow: auto; /*Si algo se desborda, se "recorta" automáticamente*/
 
-    background-color: #3b3b3b;
+    background-color: #d0ffeb;
 }
 
 
 .divCabecera {
     height: 100px; 
     margin: 10px;
+    border-radius: 100px;
+    border-left: 2px solid #5b20ff;
+    border-top: 2px solid #5b20ff;
+    border-right: 2px solid #5b20ff;
+    border-bottom: 2px solid #5b20ff;
 
-    background-color: #abe4f5;
+
+    background-color: #adceff;
 }
 
 .logo {
@@ -26,19 +32,27 @@
 .divPrincipal {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Una fracción o una parte del todo en el que está contenido. repite X veces la fracción (4 veces una fracción)*/
+    text-align: center;
 
     height: 100%;
     margin: 10px;
 
-    background-color: antiquewhite;
+    background-color: #71c5a1;
 }
 
 .zonaNavegacion {
     display: flex;
     flex-direction: column; /*Le decimos que los elementos se organicen en una columna*/
     justify-content: flex-start;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border-left: 2px solid #5b20ff;
+    border-top: 2px solid #5b20ff;
+    border-right: 2px solid #5b20ff;
+    border-bottom: 2px solid #5b20ff;
 
-    background-color: rgb(176, 223, 182);
+    background-color: #90b3e9;
 
 }
 
@@ -49,12 +63,16 @@
     padding-left: 15px;
     padding-right: 5px;
     border-radius: 10px;
+    border-left: 2px solid #5b20ff;
+    border-top: 2px solid #5b20ff;
+    border-right: 2px solid #5b20ff;
+    border-bottom: 2px solid #5b20ff;
 
-    background-color: #55c276;
+    background-color: #767bce;
 }
 
 .zonaNavegacion div:hover { /*hover hace que, cuando el cursor pase por encima, ocurra algo (por ejemplo que cambie de color o se ilumine)*/
-    background-color: #429e5e;
+    background-color: #4e54ce;
 }
 
 
@@ -62,13 +80,73 @@
     grid-column: 2/5; /*Dice que ocupe de las líneas verticales 2 a la 5. Estas líneas se determinan con el grid-template de .divPrincipal. Al estar dividido en 4 fracciones, tiene 5 líneas verticales*/
     margin: 5px;
     padding: 5px;
+    text-align: center;
 
     border-radius: 10px;
-    border-left: 2px solid #000000;
-    border-top: 2px solid #000000;
-    border-right: 2px solid #000000;
-    border-bottom: 2px solid #000000;
+    border-left: 2px solid #5b20ff;
+    border-top: 2px solid #5b20ff;
+    border-right: 2px solid #5b20ff;
+    border-bottom: 2px solid #5b20ff;
 
-    background-color: rgb(245, 212, 169);
+    background-color: #c1d7f8;
                 
+}
+
+
+.zonaContenidoColores {
+    grid-column: 2/5;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+
+    border-radius: 10px;
+    border-left: 2px solid #5b20ff;
+    border-top: 2px solid #5b20ff;
+    border-right: 2px solid #5b20ff;
+    border-bottom: 2px solid #5b20ff;
+
+    background-color: #3562a7;
+                
+}
+
+
+
+.divFooter {
+    grid-column: 5/5;
+    display: flex;
+    align-items: center;
+    height: 100px; 
+    margin: 10px;
+    border-left: 2px solid #5b20ff;
+    border-top: 2px solid #5b20ff;
+    border-right: 2px solid #5b20ff;
+    border-bottom: 2px solid #5b20ff;
+
+
+    background-color: #adceff;
+}
+
+
+#imgLogoToys {
+    height: auto;
+}
+
+#imgPaleta {
+    height: 60%;
+    width: 60%;
+}
+
+#imgECommerce {
+    height: 30%;
+    width: 30%;
+}
+
+#imgTipo1 {
+    height: 30%;
+    width: 30%;
+}
+
+#imgTipo2 {
+    height: 30%;
+    width: 30%;
 }
