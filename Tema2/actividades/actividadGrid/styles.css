@@ -1,0 +1,65 @@
+body {
+    background-color: antiquewhite;
+}
+
+.gridContainer {
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 20% 50px auto;
+
+    gap: 10px;
+
+    background-color: rgb(54, 182, 143);
+}
+
+#zonaLogo {
+    grid-column: 2/4;
+    grid-row: 1;
+
+    background-color: blanchedalmond;
+}
+
+#zonaTitulo {
+    grid-column: 5/10;
+    grid-row: 1;
+
+    background-color: bisque;
+}
+
+
+#zonaContenido {
+    grid-column: 3/11;
+    grid-row: 3;
+
+    background-color: rgb(144, 228, 182);
+}
+
+#zonaNavegacion {
+    grid-column: 2/12;
+    grid-row: 2;
+
+    display: flex;
+    justify-content: space-around;
+
+    background-color: rgb(255, 192, 76);
+}
+
+.divFormulario {
+    margin-left: 20%;
+    height: 100%;
+
+    padding-top: 10px;
+
+    background-color: rgb(193, 245, 193);
+
+}
+
+.divFormulario div {
+    margin-bottom: 15px;
+}
+
+.divFormulario div input:hover {
+    background-color: rgb(191, 233, 193);
+}
