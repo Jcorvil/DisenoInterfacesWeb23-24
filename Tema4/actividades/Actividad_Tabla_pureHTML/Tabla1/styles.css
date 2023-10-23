@@ -1,0 +1,52 @@
+table {
+    border-collapse: collapse;
+
+    width: 200px;
+    height: 200px;
+}
+
+header{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
+
+
+
+.table__row--first-row {
+    height: 20px;
+	border-bottom: 2px solid black;
+}
+
+.row__td--right-bottom {
+	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+
+.row__td--bottom {
+    border-bottom: 1px solid gray;
+}
+
+.row__td--right {
+    border-right: 1px solid gray;
+}
+
+.header__th--right {
+    border-right: 2px solid black;
+}
+
+tr th:nth-child(1) {
+    width: 10px;
+}
+
+.footer__b--pagina{
+    color: brown;
+}
+
+caption{
+    font-size: 0.5em;
+}
+
+

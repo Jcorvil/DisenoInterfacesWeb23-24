@@ -1,0 +1,20 @@
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table, tr, td, th{
+    border-collapse: collapse;
+    
+}
+
+tr:nth-child(1){
+    border-bottom: 1px solid black;
+}
+
+tr{
+    border-bottom: 1px solid rgb(126, 121, 121);
+}
+
+td{
+    border-bottom: 1px solid rgb(126, 121, 121);
+}
