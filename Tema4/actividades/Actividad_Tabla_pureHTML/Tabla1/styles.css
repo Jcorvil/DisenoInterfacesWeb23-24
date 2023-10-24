@@ -13,7 +13,18 @@ footer{
     text-align: center;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
+
+.header__h1--titulo{
+    color: blue;
+}
 
 .table__row--first-row {
     height: 20px;

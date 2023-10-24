@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Especificidad CSS</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header>
+			<h1 class="header__div--titulo">Aprendiendo especificidad</h1>
+
+            <span class="header__span--caja1">Caja 1</span>
+            <span class="header__span--caja2">
+                Caja 2
+                <div class="div__span-caja1">Roja</div>
+                <div class="div__span-caja2">Verde</div>
+                <div class="div__span-caja3">Azul</div>
+            </span>
+
+            
+		</header>
+
+		<main>
+			<div class="cuerpo__divDePrueba">Content1</div>
+			<div class="cuerpo__divDePrueba cuerpo__divDePrueba--red">Content2</div>
+			<div class="cuerpo__divDePrueba cuerpo__divDePrueba--blue">Content3</div>
+
+		</main>
+
+		<footer>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus saepe
+				eligendi repellendus veritatis ducimus. Quidem nam quia placeat sequi
+				ratione iste consectetur culpa blanditiis omnis optio, tempora maiores
+				nobis qui.
+			</p>
+		</footer>
+	</body>
+</html>
