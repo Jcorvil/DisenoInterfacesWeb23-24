@@ -1,21 +1,109 @@
-h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
 }
 
-table, tr, td, th{
-    border-collapse: collapse;
-    
+header,
+section,
+footer {
+	width: 100%;
+	text-align: center;
+	padding: 20px;
 }
 
-tr:nth-child(1){
-    border-bottom: 1px solid black;
+table {
+	width: 25%;
+	border-collapse: collapse;
+	margin: auto;
 }
 
-tr{
-    border-bottom: 1px solid rgb(126, 121, 121);
+tr:nth-child(1) {
+	border-bottom: 1px solid black;
 }
 
-td{
-    border-bottom: 1px solid rgb(126, 121, 121);
+tr {
+	border-bottom: 1px solid rgb(126, 121, 121);
 }
 
+td {
+	border-bottom: 1px solid rgb(126, 121, 121);
+}
+
+.footer__b--pagina{
+    color: brown;
+}
+
+.table__caption--h4Titulo {
+	color: blue;
+}
+
+.footer__h4--centrado {
+	text-align: center;
+}
+
+
+
+/*Colores de la tabla*/
+
+.caption__tr--headerRojo {
+	background-color: red;
+}
+
+.caption__tr--acero {
+    background-color: grey;
+}
+.caption__tr--volador {
+    background-color:skyblue;
+}
+.caption__tr--agua {
+    background-color: blue;
+}
+.caption__tr--hielo {
+    background-color: aqua;
+}
+.caption__tr--bicho {
+    background-color:greenyellow;
+}
+.caption__tr--planta {
+    background-color: green;
+}
+.caption__tr--electrico {
+    background-color: yellow;
+}
+.caption__tr--normal {
+    background-color:antiquewhite;
+}
+.caption__tr--roca {
+    background-color: burlywood;
+}
+.caption__tr--tierra {
+    background-color: brown;
+}
+.caption__tr--fuego {
+    background-color: orangered;
+}
+.caption__tr--lucha {
+    background-color: darkorange;
+}
+.caption__tr--hada {
+    background-color: pink;
+}
+.caption__tr--psiquico {
+    background-color: palevioletred;
+}
+.caption__tr--veneno {
+    background-color: purple;
+}
+.caption__tr--dragon {
+    background-color:indigo;
+}
+.caption__tr--fantasma {
+    background-color:blueviolet;
+}
+.caption__tr--siniestro {
+    background-color: darkslategrey;
+}
