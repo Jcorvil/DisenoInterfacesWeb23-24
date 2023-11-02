@@ -55,9 +55,6 @@ div {
 
 	display: flex;
 	justify-content: space-around;
-
-    border-bottom:  2px solid #009900;
-    border-radius: 5px;
 }
 
 .header__zonaTitulo {
@@ -98,8 +95,8 @@ div {
 }
 
 .zonaNavegacion__div {
-    padding: 5px;
-    transition: 0.1s ease-out;
+	padding: 5px;
+	transition: 0.1s ease-out;
 }
 
 .zonaNavegacion__div:hover {
@@ -111,8 +108,85 @@ div {
 	margin: 0;
 }
 
-
 a {
 	text-decoration: none;
 	color: #330033;
+}
+
+/*
+**********ZONA MAIN**********
+*/
+
+.zonaMain {
+	margin-top: 10px;
+
+	/*Establecemos el display: grid*/
+	display: grid;
+
+	/*Cuantas columnas queremos*/
+	grid-template-columns: repeat(12, 1fr); /*fr: unidad de medida*/
+
+	/*Establecemos un tamaño mínimo*/
+	grid-auto-rows: minmax(100px, auto);
+
+	/*Aplicamos un poco de aire*/
+	row-gap: 10px;
+	column-gap: 10px;
+}
+
+.main__zonaImagen {
+	grid-column: 2/6;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main__zonaImagen img {
+	width: auto;
+	height: 300px;
+
+	box-sizing: border-box;
+	border: 6px solid black;
+	border-radius: 10px;
+
+	transition: 0.1s linear;
+}
+
+.main__zonaImagen img:hover {
+	box-sizing: border-box;
+	transform: scale(1.03);
+}
+
+.main__zonaDescripcion {
+	grid-column: 6/12;
+
+	border-left: 4px solid #330033;
+
+	padding: 10px;
+}
+
+.main__zonaDescripcion__actores-nota {
+	display: grid;
+	grid-template-columns: 60% 40%;
+}
+
+.actores-nota__actores {
+	grid-column: 1;
+}
+
+.actores-nota__nota {
+	grid-column: 2;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+
+}
+
+#nota__puntuacion {
+	font-family: 'ZombieHolocaust';
+	font-size: 2em;
+	color: #009900;
 }
