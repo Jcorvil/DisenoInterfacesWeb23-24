@@ -1,0 +1,62 @@
+@font-face {
+	font-family: "Lato";
+	src: url("fonts/Lato-Light.ttf") format("truetype");
+}
+
+* {
+	font-family: "Lato", sans-serif;
+}
+
+body {
+	margin: 0px;
+}
+
+.header {
+    background-color: #ef5350;
+	height: 50px;
+	width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#header__zonaLogo img {
+    height: 42px;
+	width: auto;
+    margin-top: 4px;
+    margin-left: 5px
+}
+
+.header__zonaNavegacion {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 10px;
+    
+    gap: 10px;
+    font-size: 0.9em;
+}
+
+.zonaNavegacion__div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.zonaNavegacion__div:hover {
+    background-color: #e94141;
+    text-decoration: underline;
+    color: white;
+}
+
+.zonaNavegacion__div a {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    
+}
