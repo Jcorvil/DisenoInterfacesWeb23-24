@@ -1,0 +1,31 @@
+@media all and (min-width: 360px) and (max-width: 920px) {
+	.container {
+		background-color: blue;
+	}
+
+	.container__grid {
+		display: grid;
+		grid-template-columns: repeat(8, 1fr);
+		gap: 10px;
+
+		grid-auto-rows: minmax(15%, 20%);
+	}
+
+	.zonaArticulo1 {
+		grid-column: 2/4;
+		height: 20vh;
+		background-color: blueviolet;
+	}
+
+	.zonaArticulo2 {
+		grid-column: 4/6;
+		height: 20vh;
+		background-color: chocolate;
+	}
+
+	.zonaArticulo3 {
+		grid-column: 6/8;
+		height: 20vh;
+		background-color: aquamarine;
+	}
+}

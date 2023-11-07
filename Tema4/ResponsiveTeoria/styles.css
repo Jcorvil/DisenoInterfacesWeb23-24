@@ -1,0 +1,7 @@
+@import url("stylesDesktop.css");
+@import url("stylesPortatil.css");
+@import url("stylesMovil.css");
+
+body{
+    margin: 0;
+}
