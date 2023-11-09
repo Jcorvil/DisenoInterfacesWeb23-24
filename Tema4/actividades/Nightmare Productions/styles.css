@@ -182,11 +182,48 @@ a {
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
-
 }
 
 #nota__puntuacion {
-	font-family: 'ZombieHolocaust';
+	font-family: "ZombieHolocaust";
 	font-size: 2em;
 	color: #009900;
+}
+
+@media all and (max-width: 920px) {
+	.main__zonaImagen {
+		grid-column: 2/12;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.main__zonaDescripcion {
+		grid-column: 2/12;
+		border-left: 0;
+		border-left: 6px solid #330033;
+		padding: 10px;
+	}
+
+	.header__zonaTitulo {
+		width: 100%;
+	}
+
+	.header__zonaNavegacion {
+		width: 100%;
+	}
+
+	.header {
+		height: 90px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+
+		position: sticky;
+		top: 0;
+		z-index: 1;
+
+		display: flex;
+		flex-direction: column;
+	}
 }
