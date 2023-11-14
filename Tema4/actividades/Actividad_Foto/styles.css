@@ -16,7 +16,11 @@ header a {
 
 footer {
     background-color: brown;
-    
+    border-top: 2px solid #07f874;
+    padding: 1em;
+	display: flex;
+	flex-direction: column;
+	
 }
 
 .body__zonaMain {
