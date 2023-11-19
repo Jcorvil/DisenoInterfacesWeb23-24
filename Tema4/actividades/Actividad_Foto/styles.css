@@ -1,55 +1,6 @@
-body {
+@import url("stylesDesktop.css");
+@import url("stylesVertical.css");
+
+body{
     margin: 0;
-    padding: 0;
-}
-
-header {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-}
-
-header a {
-    text-decoration: none;
-    color: cornflowerblue;
-}
-
-footer {
-    background-color: brown;
-    border-top: 2px solid #07f874;
-    padding: 1em;
-	display: flex;
-	flex-direction: column;
-	
-}
-
-.body__zonaMain {
-	display: grid;
-
-	grid-template-columns: repeat(12, 1fr);
-
-	grid-auto-rows: minmax(100px, auto);
-
-}
-
-
-.header__zonaTituloLogo {
-    display: flex;
-    background-color: red;
-}
-
-.header__zonaLogo img {
-    width: 10%;
-}
-
-.header__zonaTitulo {
-    width: 40%;
-}
-
-.header__zonaNavegacion {
-    display: flex;
-    background-color: orange;
-    justify-content: space-around;
-    gap: 90px;
-    padding: 25px;
 }
