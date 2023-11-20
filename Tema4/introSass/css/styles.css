@@ -1,0 +1,19 @@
+body {
+  background-color: #F0F0F0;
+}
+
+.header {
+  height: 10vh;
+  background-color: #1d1d1d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header__div {
+  height: 100%;
+  width: 3em;
+  color: #F0F0F0;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */

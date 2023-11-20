@@ -1,0 +1,25 @@
+//Comentario en SASS
+$color-primary: #F0F0F0;
+$color-secondary: #1d1d1d;
+
+body {
+	background-color: $color-primary;
+}
+
+.header {
+	height: 10vh;
+	background-color: $color-secondary;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+
+    .header__div {
+		height: 100%;
+		width: 3em;
+		color: $color-primary;
+        padding: 10px;
+	}
+
+}

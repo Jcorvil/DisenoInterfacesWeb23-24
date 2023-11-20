@@ -31,3 +31,16 @@ position: relative; -|/con respecto a su posición original
 position: static; → Por defecto
 
 
+/*  SASS */
+
+•Variables   $color-primario: #F0F0F0;
+             body{
+                background-color: $color-primario;
+             }
+             
+
+•Anidación
+
+•Funciones
+
+•Herencia
