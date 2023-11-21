@@ -33,14 +33,21 @@ position: static; → Por defecto
 
 /*  SASS */
 
-•Variables   $color-primario: #F0F0F0;
-             body{
-                background-color: $color-primario;
-             }
-             
+•Variables   $color-primario: #F0F0F0;   
 
-•Anidación
+•Anidación  body {
+              background-color: $color-primario;
+    
+              div a {
+                text-decoration: none;
+              }
+            }
 
-•Funciones
+
+•Funciones  @mixin cambiar-color-fondo ($nuevo-color:#FFFFFF) {
+              background-color: $nuevo-color;
+            }
+
+
 
 •Herencia

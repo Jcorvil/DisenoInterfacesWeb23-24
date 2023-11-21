@@ -1,25 +1,70 @@
-//Comentario en SASS
-$color-primary: #F0F0F0;
-$color-secondary: #1d1d1d;
+$color-fondo: #ffffff;
+$color-fondo-header: #000000;
+$color-fondo-nav: #f0f0f0;
 
-body {
-	background-color: $color-primary;
+$color-letra: #000000;
+$color-letra-header: #ffffff;
+$color-letra-nav: #222222;
+
+$color-borde-elemento-nav: #b31312;
+
+//Función para cambiar el fondo y la letra de un elemento
+@mixin cambiar-fondo-y-letra(
+	$color-nuevo-fondo: #ffffff,
+	$color-nuevo-letra: #000000
+) {
+	background-color: $color-nuevo-fondo;
+	color: $color-nuevo-letra;
+}
+
+@mixin establecer-grid($n-columnas: 12) {
+	display: grid;
+	grid-template-columns: repeat($n-columnas, 1fr);
 }
 
 .header {
-	height: 10vh;
-	background-color: $color-secondary;
+	@include cambiar-fondo-y-letra($color-fondo-header, $color-letra-header);
+	@include establecer-grid();
+
+	h1 {
+		grid-column: 3/11;
+	}
+}
+
+.nav-bar {
+	@include cambiar-fondo-y-letra($color-fondo-nav, $color-letra-nav);
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
 
-    .header__div {
-		height: 100%;
-		width: 3em;
-		color: $color-primary;
-        padding: 10px;
+	padding-top: 1em;
+	padding-bottom: 1em;
+
+	div {
+		padding-left: 1em;
+		padding-right: 1em;
+
+		a {
+			text-decoration: none;
+			color: inherit;
+			padding: 1em;
+		}
+
+		a:hover {
+			border-bottom: 2px solid $color-borde-elemento-nav;
+		}
 	}
+	.a__active {
+		border-bottom: 2px solid $color-borde-elemento-nav;
+	}
+}
 
+.main-content {
+	@include cambiar-fondo-y-letra($color-fondo, $color-letra);
+	@include establecer-grid();
+
+	.main__publicacion {
+		grid-column: 3/11;
+	}
 }
