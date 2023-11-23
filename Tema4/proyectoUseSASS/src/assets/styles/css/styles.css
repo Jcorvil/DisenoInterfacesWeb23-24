@@ -1,0 +1,51 @@
+h1,
+h2,
+h3,
+h4,
+div,
+a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: 10vh;
+  background-color: #A8323C;
+  color: #CCCCCC;
+}
+.header .header__titulo {
+  grid-column: 2/9;
+  height: 100%;
+  background-color: red;
+}
+.header .header__nav {
+  grid-column: 9/12;
+  height: 100%;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header .header__nav .nav__hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.header .header__nav .nav__hamburger .nav__span {
+  width: 30px;
+  height: 4px;
+  border-radius: 2px;
+  margin: 2px;
+  background-color: black;
+  transition: all 0.5s ease-in;
+}
+.header .header__nav .nav__hamburger:hover .nav__span:nth-child(2) {
+  width: 60%;
+  background-color: red;
+}
+
+/*# sourceMappingURL=styles.css.map */
