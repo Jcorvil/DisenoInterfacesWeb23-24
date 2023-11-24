@@ -48,5 +48,9 @@ main {
 .main-content .main__publicacion {
   grid-column: 3/11;
 }
+.main-content .main__publicacion a {
+  text-decoration: none;
+  color: red;
+}
 
 /*# sourceMappingURL=estilos.css.map */

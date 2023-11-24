@@ -74,4 +74,9 @@ main {
 	.main__publicacion {
 		grid-column: 3/11;
 	}
+
+	.main__publicacion a {
+		text-decoration: none;
+		color: red;
+	}
 }
