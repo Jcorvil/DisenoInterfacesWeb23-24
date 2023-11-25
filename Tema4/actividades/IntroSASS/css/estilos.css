@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 main {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -40,7 +44,7 @@ main {
 }
 
 .main-content {
-  background-color: #ffffff;
+  background-color: #EEEEEE;
   color: #000000;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -51,6 +55,19 @@ main {
 .main-content .main__publicacion a {
   text-decoration: none;
   color: red;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: #3B3B3B;
+}
+footer img {
+  grid-column: 3/11;
+}
+footer p {
+  grid-column: 3/11;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=estilos.css.map */

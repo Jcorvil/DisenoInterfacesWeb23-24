@@ -1,12 +1,26 @@
-$color-fondo: #ffffff;
+//Textos
+$color-textos: #222222;
+
+$color-fondo: #EEEEEE;
+
 $color-fondo-header: #000000;
-$color-fondo-nav: #f0f0f0;
+$color-letra-header: #ffffff;
+
+$color-fondo-footer: #3B3B3B;
+$color-letra-footer: #FFFFFF;
+
 
 $color-letra: #000000;
-$color-letra-header: #ffffff;
+
+$color-fondo-nav: #f0f0f0;
 $color-letra-nav: #222222;
 
 $color-borde-elemento-nav: #b31312;
+
+
+body {
+	margin: 0;
+}
 
 main {
 	display: grid;
@@ -79,4 +93,18 @@ main {
 		text-decoration: none;
 		color: red;
 	}
+}
+
+
+footer {
+	@include establecer-grid();
+	background-color: $color-fondo-footer;
+	img {
+		grid-column: 3/11;
+	}
+	p {
+		grid-column: 3/11;
+		color: $color-letra-footer;
+	}
+
 }
