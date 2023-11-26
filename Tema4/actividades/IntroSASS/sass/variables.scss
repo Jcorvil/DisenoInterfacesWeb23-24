@@ -1,0 +1,39 @@
+$color-textos: #222222;
+
+$color-fondo: #eeeeee;
+
+$color-fondo-header: #000000;
+$color-letra-header: #ffffff;
+
+$color-fondo-footer: #3b3b3b;
+$color-letra-footer: #ffffff;
+
+$color-letra: #000000;
+
+$color-fondo-nav: #f0f0f0;
+$color-letra-nav: #222222;
+
+$color-borde: #DDDDDD;
+
+$color-borde-elemento-nav: #b31312;
+
+@mixin tipografia-sinSerifa{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@mixin tipografia-conSerifa{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@mixin estilo-enlace {
+	color: #CC0000;
+	text-decoration: none;
+	a:hover{
+		color: #222222;
+	}
+}
+
+@mixin centrar {
+	margin-left: auto;
+	margin-right: auto;
+}

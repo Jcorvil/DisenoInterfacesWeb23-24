@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
 }
@@ -15,7 +16,11 @@ main {
   grid-template-columns: repeat(12, 1fr);
 }
 .header h1 {
+  font-size: 4em;
+}
+.header .header__zonaTituloLogo {
   grid-column: 3/11;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-bar {
@@ -26,6 +31,8 @@ main {
   align-items: center;
   padding-top: 1em;
   padding-bottom: 1em;
+  border-bottom: 2px solid #DDDDDD;
+  padding: 2em;
 }
 .nav-bar div {
   padding-left: 1em;
@@ -43,31 +50,48 @@ main {
   border-bottom: 2px solid #b31312;
 }
 
-.main-content {
-  background-color: #EEEEEE;
+main {
+  background-color: #eeeeee;
   color: #000000;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
-.main-content .main__publicacion {
-  grid-column: 3/11;
+main .main__content {
+  display: flex;
+  flex-direction: column;
+  grid-column: 4/11;
 }
-.main-content .main__publicacion a {
+main .main__content .main__content--lista a {
+  color: #CC0000;
   text-decoration: none;
-  color: red;
+}
+main .main__content .main__content--lista a a:hover {
+  color: #222222;
+}
+main .main__content .main__content--lista li {
+  padding: 8px;
+  font-family: "Times New Roman", Times, serif;
+}
+main .main__content #main__publicacion--título {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+.lista__titulo {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 footer {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  background-color: #3B3B3B;
+  background-color: #3b3b3b;
 }
 footer img {
   grid-column: 3/11;
 }
 footer p {
   grid-column: 3/11;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=recursos.css.map */

@@ -1,0 +1,136 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column: 2/12;
+}
+
+.header {
+  background-color: #000000;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.header h1 {
+  font-size: 4em;
+}
+.header .header__zonaTituloLogo {
+  grid-column: 3/11;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-bar {
+  background-color: #f0f0f0;
+  color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #DDDDDD;
+  padding: 2em;
+}
+.nav-bar div {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.nav-bar div a {
+  text-decoration: none;
+  color: inherit;
+  padding: 1em;
+}
+.nav-bar div a:hover {
+  border-bottom: 2px solid #b31312;
+}
+.nav-bar .a__active {
+  border-bottom: 2px solid #b31312;
+}
+
+.main-content {
+  background-color: #eeeeee;
+  color: #000000;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.main-content section {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: x-large;
+}
+.main-content .main__publicacion {
+  grid-column: 3/11;
+  font-size: large;
+}
+.main-content .main__publicacion .image-container {
+  text-align: center;
+}
+.main-content .main__publicacion img#lietome {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+.main-content .main__publicacion iframe {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+.main-content .main__publicacion section, .main-content p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main-content .main__publicacion h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
+  font-family: "Times New Roman", Times, serif;
+}
+.main-content .main__publicacion a {
+  color: #CC0000;
+  text-decoration: none;
+}
+.main-content .main__publicacion a a:hover {
+  color: #222222;
+}
+.main-content #main__publicacion--título {
+  font-size: 3em;
+}
+.main-content .main__publicacion--subtitulo {
+  text-align: center;
+  margin-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  margin-bottom: 2em;
+}
+.main-content .main__publicacion--infoAutor {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  display: flex;
+  align-items: center;
+  margin-bottom: 5em;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.main-content .main__publicacion--infoAutor img {
+  max-width: 100%;
+  margin-right: 1em;
+  border-radius: 100%;
+}
+
+#autorFecha {
+  font-family: "Times New Roman", Times, serif;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: #3b3b3b;
+}
+footer img {
+  grid-column: 3/11;
+}
+footer p {
+  grid-column: 3/11;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=fin-confianza.css.map */

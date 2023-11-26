@@ -1,0 +1,159 @@
+@import 'variables';
+
+body {
+	margin: 0;
+}
+
+main {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column: 2/12;
+}
+
+//Función para cambiar el fondo y la letra de un elemento
+@mixin cambiar-fondo-y-letra(
+	$color-nuevo-fondo: #ffffff,
+	$color-nuevo-letra: #000000
+) {
+	background-color: $color-nuevo-fondo;
+	color: $color-nuevo-letra;
+}
+
+@mixin establecer-grid($n-columnas: 12) {
+	display: grid;
+	grid-template-columns: repeat($n-columnas, 1fr);
+}
+
+.header {
+	@include cambiar-fondo-y-letra($color-fondo-header, $color-letra-header);
+	@include establecer-grid();
+
+	h1 {
+		font-size: 4em;
+	}
+
+	.header__zonaTituloLogo {
+		grid-column: 3/11;
+		@include tipografia-sinSerifa();
+	}
+}
+
+.nav-bar {
+	@include cambiar-fondo-y-letra($color-fondo-nav, $color-letra-nav);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border-bottom: 2px solid $color-borde;
+	padding: 2em;
+
+	div {
+		padding-left: 1em;
+		padding-right: 1em;
+
+		a {
+			text-decoration: none;
+			color: inherit;
+			padding: 1em;
+		}
+
+		a:hover {
+			border-bottom: 2px solid $color-borde-elemento-nav;
+		}
+	}
+	.a__active {
+		border-bottom: 2px solid $color-borde-elemento-nav;
+	}
+}
+
+.main-content {
+	@include cambiar-fondo-y-letra($color-fondo, $color-letra);
+	@include establecer-grid();
+
+	section {
+		margin-left: 10%;
+		margin-right: 10%;
+		font-size: x-large;
+	}
+
+	.main__publicacion {
+		grid-column: 3/11;
+		font-size: large;
+
+		.image-container {
+			text-align: center;
+		}
+
+		img#lietome {
+			display: block;
+			margin: 0 auto;
+			width: 70%;
+		}
+
+		iframe {
+			display: block;
+			margin: 0 auto;
+			width: 70%;
+		}
+	}
+
+	.main__publicacion section, p {
+		@include tipografia-sinSerifa();
+	}
+
+	.main__publicacion h1, h2, h3, h4, h5, h6 {
+		@include tipografia-conSerifa();
+	}
+
+	.main__publicacion a {
+		@include estilo-enlace();
+	}
+
+	#main__publicacion--título {
+		font-size: 3em;
+	}
+
+	.main__publicacion--subtitulo {
+		text-align: center;
+		margin-top: 5px;
+		@include tipografia-sinSerifa();
+		font-size: medium;
+		margin-bottom: 2em;
+	}
+
+	.main__publicacion--infoAutor {
+		@include establecer-grid();
+		display: flex;
+		align-items: center;
+		margin-bottom: 5em;
+		margin-left: 15%;
+		margin-right: 15%;
+
+		img {
+			max-width: 100%;
+			margin-right: 1em;
+			border-radius: 100%;
+		}
+
+
+	}
+}
+
+#autorFecha{
+	@include tipografia-conSerifa();
+}
+
+footer {
+	@include establecer-grid();
+	background-color: $color-fondo-footer;
+	img {
+		grid-column: 3/11;
+	}
+	p {
+		grid-column: 3/11;
+		color: $color-letra-footer;
+	}
+}

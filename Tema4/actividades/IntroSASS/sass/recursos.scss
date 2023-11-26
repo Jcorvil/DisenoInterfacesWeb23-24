@@ -1,22 +1,4 @@
-//Textos
-$color-textos: #222222;
-
-$color-fondo: #EEEEEE;
-
-$color-fondo-header: #000000;
-$color-letra-header: #ffffff;
-
-$color-fondo-footer: #3B3B3B;
-$color-letra-footer: #FFFFFF;
-
-
-$color-letra: #000000;
-
-$color-fondo-nav: #f0f0f0;
-$color-letra-nav: #222222;
-
-$color-borde-elemento-nav: #b31312;
-
+@import "variables";
 
 body {
 	margin: 0;
@@ -27,7 +9,6 @@ main {
 	grid-template-columns: repeat(12, 1fr);
 	grid-column: 2/12;
 }
-
 
 //Función para cambiar el fondo y la letra de un elemento
 @mixin cambiar-fondo-y-letra(
@@ -48,7 +29,12 @@ main {
 	@include establecer-grid();
 
 	h1 {
+		font-size: 4em;
+	}
+
+	.header__zonaTituloLogo {
 		grid-column: 3/11;
+		@include tipografia-sinSerifa();
 	}
 }
 
@@ -61,6 +47,8 @@ main {
 
 	padding-top: 1em;
 	padding-bottom: 1em;
+	border-bottom: 2px solid $color-borde;
+	padding: 2em;
 
 	div {
 		padding-left: 1em;
@@ -81,20 +69,37 @@ main {
 	}
 }
 
-.main-content {
+main {
 	@include cambiar-fondo-y-letra($color-fondo, $color-letra);
 	@include establecer-grid();
 
-	.main__publicacion {
-		grid-column: 3/11;
-	}
+	.main__content {
+		display: flex;
+		flex-direction: column;
+		grid-column: 4/11;
 
-	.main__publicacion a {
-		text-decoration: none;
-		color: red;
+		.main__content--lista {
+
+			a {
+				@include estilo-enlace;
+			}
+
+            li{
+                padding: 8px;
+                @include tipografia-conSerifa();
+            }
+		}
+
+		#main__publicacion--título {
+			font-size: 3em;
+			margin-bottom: 0;
+		}
 	}
 }
 
+.lista__titulo {
+    @include tipografia-sinSerifa();
+}
 
 footer {
 	@include establecer-grid();
@@ -106,5 +111,4 @@ footer {
 		grid-column: 3/11;
 		color: $color-letra-footer;
 	}
-
 }

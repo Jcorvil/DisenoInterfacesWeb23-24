@@ -1,0 +1,123 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column: 2/12;
+}
+
+.header {
+  background-color: #000000;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.header h1 {
+  font-size: 4em;
+}
+.header .header__zonaTituloLogo {
+  grid-column: 3/11;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-bar {
+  background-color: #f0f0f0;
+  color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #DDDDDD;
+  padding: 2em;
+}
+.nav-bar div {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.nav-bar div a {
+  text-decoration: none;
+  color: inherit;
+  padding: 1em;
+}
+.nav-bar div a:hover {
+  border-bottom: 2px solid #b31312;
+}
+.nav-bar .a__active {
+  border-bottom: 2px solid #b31312;
+}
+
+.main-content {
+  background-color: #eeeeee;
+  color: #000000;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.main-content #main__publicacion--título {
+  font-size: 3em;
+  font-family: "Times New Roman", Times, serif;
+}
+.main-content .main__publicacion {
+  grid-column: 3/11;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main-content .main__publicacion a {
+  color: #CC0000;
+  text-decoration: none;
+}
+.main-content .main__publicacion a a:hover {
+  color: #222222;
+}
+.main-content .main__publicacion img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-content iframe {
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-content #main__enlaceReferencia {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5em;
+}
+.main-content #video {
+  display: flex;
+  flex-direction: column;
+}
+.main-content #video i {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Times New Roman", Times, serif;
+  font-size: medium;
+}
+.main-content #quote {
+  display: flex;
+  justify-content: center;
+}
+.main-content #quote blockquote {
+  max-width: 65%;
+  background-color: #DDDDDD;
+  padding: 2em;
+  border-left: 5px solid grey;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: #3b3b3b;
+}
+footer img {
+  grid-column: 3/11;
+}
+footer p {
+  grid-column: 3/11;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=terminologia.css.map */

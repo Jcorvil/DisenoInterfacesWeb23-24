@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="stylesheet" href="css/estilos.css" />
+		<link rel="stylesheet" href="css/fin-confianza.css" />
 	</head>
 	<body>
 		<header class="header">
@@ -15,16 +15,18 @@
 		</header>
 
 		<nav class="nav-bar">
-			<div><a class="a__active" href="#">Artículo</a></div>
-			<div><a href="#">Recurso</a></div>
-			<div><a href="#">Terminología</a></div>
+			<div><a class="a__active" href="#">ARTÍCULO</a></div>
+			<div><a href="recursos.html">RECURSOS</a></div>
+			<div><a href="terminologia.html">TERMINOLOGÍA</a></div>
 		</nav>
 		<main class="main-content">
 			<div class="main__publicacion">
-				<h1>¿El fin de la confianza?</h1>
-				<p>Por <a href="#">Ferran Esteve</a>, 13 de Septiembre de 2018</p>
-				<hr />
-				<p>
+				<h1 id="main__publicacion--título">¿El fin de la confianza?</h1>
+				<p id="autorFecha">
+					Por <a href="#">Ferran Esteve</a>, 13 de Septiembre de 2018
+				</p>
+				<section>
+					<hr />
 					Malas políticas laborales, evasión de impuestos, impacto sobre el
 					transporte y la vivienda, uso indebido de datos personales…
 					Actuaciones como las del caso Facebook y Cambridge Analytica les están
@@ -32,10 +34,10 @@
 					en pérdidas irreparables. Una mayor responsabilidad social corporativa
 					y un uso consciente de estos servicios podrían forzar cambios de
 					calado en el sector.
-				</p>
-				<hr />
-				<img src="img/Fi_confi_lab.jpg" alt="" />
-				<p>
+					<hr />
+				</section>
+				<img id="lietome" src="img/Fi_confi_lab.jpg" alt="" />
+				<p class="main__publicacion--subtitulo">
 					Lie to me |
 					<a href="https://www.flickr.com/photos/zygia/5714137850"> Rosy </a> |
 					CC BY-ND 2.0
@@ -51,26 +53,30 @@
 					observación detallada del análisis revela que los resultados son
 					ambivalentes entre categorías, y las compañías tecnológicas gozan del
 					apoyo del 75% de la población, por encima de sectores como el
-					educativo (70%) o el sanitario (63%). Como ha señalado repetidamente
-					el investigador Evgeny Morozov –el "aguafiestas" del sector
-					tecnológico, en palabras de Brian Eno–, las empresas de la economía
-					digital son una "industria teflón": como en las buenas sartenes, todo
-					lo que se les echa encima resbala sin mancharlas. Sin embargo, algunas
-					señales apuntan a un posible desgaste en su reputación, que puede
-					rastrearse en las noticias recientes: huelga en Amazon España, batalla
-					de algunos ayuntamientos contra Airbnb, precarización de los riders,
-					demandas de mayor regulación… A estos síntomas de descontento con
-					algunas empresas, se suma el temor por el rumbo general que está
-					tomando la innovación. Según el barómetro de Edelman, personas de todo
-					el mundo observan con recelo los avances en inteligencia artificial,
-					los vehículos autónomos y la automatización del empleo; así como el
-					manejo que las compañías hacen de los datos personales. Si bien eso no
-					impide que mantengan un amplio margen de simpatía, los responsables
-					del estudio advierten que puede perderse de manera vertiginosa, ya que
-					se han experimentado caídas en la confianza entre el "público
-					informado" de en torno al 20% en Estados Unidos y Francia, por
-					ejemplo. Todo ello sin contar aún con el efecto que puede tener un
-					escándalo reciente: el caso de Facebook i Cambridge Analytica.
+					educativo (70%) o el sanitario (63%). <br />
+					<br />
+					Como ha señalado repetidamente el investigador Evgeny Morozov –el
+					"aguafiestas" del sector tecnológico, en palabras de Brian Eno–, las
+					empresas de la economía digital son una "industria teflón": como en
+					las buenas sartenes, todo lo que se les echa encima resbala sin
+					mancharlas. Sin embargo, algunas señales apuntan a un posible desgaste
+					en su reputación, que puede rastrearse en las noticias recientes:
+					huelga en Amazon España, batalla de algunos ayuntamientos contra
+					Airbnb, precarización de los riders, demandas de mayor regulación…
+					<br />
+					<br />
+					A estos síntomas de descontento con algunas empresas, se suma el temor
+					por el rumbo general que está tomando la innovación. Según el
+					barómetro de Edelman, personas de todo el mundo observan con recelo
+					los avances en inteligencia artificial, los vehículos autónomos y la
+					automatización del empleo; así como el manejo que las compañías hacen
+					de los datos personales. Si bien eso no impide que mantengan un amplio
+					margen de simpatía, los responsables del estudio advierten que puede
+					perderse de manera vertiginosa, ya que se han experimentado caídas en
+					la confianza entre el "público informado" de en torno al 20% en
+					Estados Unidos y Francia, por ejemplo. Todo ello sin contar aún con el
+					efecto que puede tener un escándalo reciente: el caso de Facebook i
+					Cambridge Analytica.
 				</p>
 				<h2>Datos, mentiras y manipulación</h2>
 				<p>
@@ -89,12 +95,15 @@
 					privacidad. Vayamos por partes.
 				</p>
 				<iframe
-					width="720"
-					height="400"
-					src="https://www.youtube.com/watch?v=FXdYSQ6nu-M"
-				>
-				</iframe>
-				<p>
+					width="560"
+					height="515"
+					src="https://www.youtube.com/embed/FXdYSQ6nu-M?si=aM5jo6L9ti18Qw3O&amp;controls=0"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen
+				></iframe>
+				<p class="main__publicacion--subtitulo">
 					Cambridge Analytica whistleblower: "We spent $1m harvesting millions
 					of Facebook profiles" | <i> The Guardian </i>
 				</p>
@@ -116,19 +125,21 @@
 					las fuentes se confundan y convierte a los canales sociales en medios
 					de comunicación en los que no hay filtro periodístico y todas las
 					informaciones parecen igual de confiables, más cuando las comparten
-					amigos y familiares. Facebook ha sido acusada explícitamente de no
-					hacer lo suficiente para limitar esta confusión, ya que podría moderar
-					noticias falsas o que incitan al odio, del mismo modo que se aplica en
-					censurar cualquier rastro de sexualidad. Uno de los casos más
-					criticados de esta falta de acción ha sido el de Birmania, donde se ha
-					culpado a la red social de jugar un papel clave en la propagación del
-					odio hacia los rohingya, una minoría étnica que está sufriendo una
-					oleada de violencia que ha obligado a unas 700.000 personas a huir de
-					sus casas. Esa misma falta de control es la que también habría
-					facilitado la injerencia rusa en las elecciones de Estados Unidos, ya
-					que, según la Comunidad de Inteligencia de ese país, Rusia llevó a
-					cabo una campaña de influencia en favor de Trump mediante –entre otras
-					cosas– la difusión de noticias falsas en redes sociales.
+					amigos y familiares. <br />
+					<br />
+					Facebook ha sido acusada explícitamente de no hacer lo suficiente para
+					limitar esta confusión, ya que podría moderar noticias falsas o que
+					incitan al odio, del mismo modo que se aplica en censurar cualquier
+					rastro de sexualidad. Uno de los casos más criticados de esta falta de
+					acción ha sido el de Birmania, donde se ha culpado a la red social de
+					jugar un papel clave en la propagación del odio hacia los rohingya,
+					una minoría étnica que está sufriendo una oleada de violencia que ha
+					obligado a unas 700.000 personas a huir de sus casas. Esa misma falta
+					de control es la que también habría facilitado la injerencia rusa en
+					las elecciones de Estados Unidos, ya que, según la Comunidad de
+					Inteligencia de ese país, Rusia llevó a cabo una campaña de influencia
+					en favor de Trump mediante –entre otras cosas– la difusión de noticias
+					falsas en redes sociales.
 				</p>
 
 				<h2>La paradoja de la privacidad</h2>
@@ -141,9 +152,11 @@
 					manifiesto que la información de los usuarios de Apple, Google,
 					Facebook, Microsoft, Yahoo y YouTube había sido recopilada de manera
 					masiva en el pasado, en aquella ocasión por el propio gobierno de los
-					Estados Unidos. Pero más allá de las oleadas de indignación que suelen
-					suceder a este tipo de revelaciones, ni Facebook ni otras tecnológicas
-					parecen encontrarse en apuros, al menos no a causa de esta pérdida de
+					Estados Unidos. <br />
+					<br />
+					Pero más allá de las oleadas de indignación que suelen suceder a este
+					tipo de revelaciones, ni Facebook ni otras tecnológicas parecen
+					encontrarse en apuros, al menos no a causa de esta pérdida de
 					reputación. Es necesario reflexionar sobre por qué los usuarios no
 					dejan de usar estas plataformas, incluso cuando se oponen a muchas de
 					sus políticas y prácticas. En el ámbito concreto de la intimidad, este
@@ -155,24 +168,25 @@
 					obtiene otro tipo de beneficios a corto plazo; no solo en forma de
 					bienes y servicios, sino también de acceso al conocimiento, libertad
 					de expresión, reconocimiento social, construcción de relaciones
-					interpersonales, etc. Un buen ejemplo de esta paradoja se encuentra en
-					otra encuesta de Edelman, ésta de 2016, sobre confianza y tecnologías
-					predictivas. En lo respectivo a la banca, la mayoría de personas
-					señaló entonces que no aprobaría que sus datos se usasen para
-					establecer patrones para calcular automáticamente quién puede acceder
-					a una hipoteca y quién no. Sin embargo, estaban dispuestas a que se
-					empleasen para mejorar la gestión de sus cuentas y el asesoramiento
-					que reciben. Extrapolando este doble baremo a otros ámbitos de la
-					economía digital, parece comprensible que la gente desconfíe de
-					algunas empresas, o incluso del rumbo de la innovación en su conjunto,
-					pero que no por ello quiera renunciar al beneficio que obtiene de su
-					consumo a corto plazo. A ello hay que sumarle cierta tendencia a los
-					monopolios naturales en el sector, así como el efecto red, el fenómeno
-					por el cual el valor de un producto o servicio aumenta cuando más
-					individuos lo usan. Por todo ello, abandonar las plataformas que
-					agrupan a la mayor parte de los consumidores de un mercado implica, en
-					la práctica, asumir el coste de aislarse también de sus beneficios,
-					sean económicos o sociales..
+					interpersonales, etc. <br />
+					<br />
+					Un buen ejemplo de esta paradoja se encuentra en otra encuesta de
+					Edelman, ésta de 2016, sobre confianza y tecnologías predictivas. En
+					lo respectivo a la banca, la mayoría de personas señaló entonces que
+					no aprobaría que sus datos se usasen para establecer patrones para
+					calcular automáticamente quién puede acceder a una hipoteca y quién
+					no. Sin embargo, estaban dispuestas a que se empleasen para mejorar la
+					gestión de sus cuentas y el asesoramiento que reciben. Extrapolando
+					este doble baremo a otros ámbitos de la economía digital, parece
+					comprensible que la gente desconfíe de algunas empresas, o incluso del
+					rumbo de la innovación en su conjunto, pero que no por ello quiera
+					renunciar al beneficio que obtiene de su consumo a corto plazo. A ello
+					hay que sumarle cierta tendencia a los monopolios naturales en el
+					sector, así como el efecto red, el fenómeno por el cual el valor de un
+					producto o servicio aumenta cuando más individuos lo usan. Por todo
+					ello, abandonar las plataformas que agrupan a la mayor parte de los
+					consumidores de un mercado implica, en la práctica, asumir el coste de
+					aislarse también de sus beneficios, sean económicos o sociales..
 				</p>
 				<h2>Alterar la tendencia</h2>
 				<p>
@@ -191,7 +205,8 @@
 					más allá de la polémica, puede convertirse en un ejemplo de nuevas
 					vías de colaboración público-privada para corregir los efectos no
 					deseados de esta y otras grandes corporaciones en más ciudades del
-					mundo. Por otro lado, hacer un uso consciente, crítico e informado de
+					mundo. <br />
+					<br />Por otro lado, hacer un uso consciente, crítico e informado de
 					estos servicios es el único modo de forzar a las propias empresas
 					tecnológicas a tener en cuenta estas demandas. No hay que olvidar que
 					la confianza entre sectores es la base de gran parte del modelo de
@@ -211,6 +226,8 @@
 					servicios que garanticen la protección de los datos de sus usuarios.
 					Compañías como AT&T, Comcast o la propia Facebook ya han testeado
 					estos modelos o han mostrado la intención de hacerlo en el futuro.
+					<br />
+					<br />
 					Cultivar la confianza es difícil. Es un capital social intangible que
 					se consigue con tiempo y esfuerzo. Las grandes empresas tecnológicas
 					han sido responsables de mejoras y avances sociales que hoy se dan por
@@ -220,23 +237,26 @@
 					exigencia de los usuarios, que, cada vez más, parecen juzgar los
 					avances tecnológicos teniendo en cuenta su impacto social.
 				</p>
-				<img src="img/ferran-esteve.jpg" alt="" />
-				<p>
-					Ferran Esteve es periodista, investigador e ilustrador. Su proyecto
-					más reciente es Proun, un fanzine de investigación y creación que
-					explora las intersecciones del arte, la tecnología y el cambio social.
-				</p>
-				<br>
-				<i>
+				<div class="main__publicacion--infoAutor">
+					<img src="img/ferran-esteve.jpg" alt="Ferran Esteve" />
+					<p>
+						Ferran Esteve es periodista, investigador e ilustrador. Su proyecto
+						más reciente es <i>Proun</i>, un fanzine de investigación y creación
+						que explora las intersecciones del arte, la tecnología y el cambio
+						social.
+					</p>
+					<br />
+				</div>
+				<i class="main__publicacion--subtitulo">
 					Esteve, Ferran (13 de septiembre de 2018). ¿El fin de la confianza?.
 					Consultado desde
 					<a href="http://lab.cccb.org/es/el-fin-de-la-confianza"
 						>http://lab.cccb.org/es/el-fin-de-la-confianza</a
 					>
 				</i>
-				<br>
-				<br>
-				<br>
+				<br />
+				<br />
+				<br />
 			</div>
 		</main>
 	</body>
