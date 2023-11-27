@@ -50,22 +50,27 @@ main {
 	border-bottom: 2px solid $color-borde;
 	padding: 2em;
 
-	div {
-		padding-left: 1em;
-		padding-right: 1em;
+	ul {
+		list-style: none;
+		display: flex;
 
-		a {
-			text-decoration: none;
-			color: inherit;
-			padding: 1em;
-		}
+		li {
+			padding: 0 1em;
 
-		a:hover {
-			border-bottom: 2px solid $color-borde-elemento-nav;
+			a {
+				text-decoration: none;
+				color: inherit;
+				padding: 1em;
+
+				&:hover {
+					border-bottom: 2px solid $color-borde-elemento-nav;
+				}
+			}
+
+			&.a__active a {
+				border-bottom: 2px solid $color-borde-elemento-nav;
+			}
 		}
-	}
-	.a__active {
-		border-bottom: 2px solid $color-borde-elemento-nav;
 	}
 }
 
@@ -79,15 +84,14 @@ main {
 		grid-column: 4/11;
 
 		.main__content--lista {
-
 			a {
 				@include estilo-enlace;
 			}
 
-            li{
-                padding: 8px;
-                @include tipografia-conSerifa();
-            }
+			li {
+				padding: 8px;
+				@include tipografia-conSerifa();
+			}
 		}
 
 		#main__publicacion--título {
@@ -98,7 +102,7 @@ main {
 }
 
 .lista__titulo {
-    @include tipografia-sinSerifa();
+	@include tipografia-sinSerifa();
 }
 
 footer {

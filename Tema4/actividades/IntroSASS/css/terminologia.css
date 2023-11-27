@@ -34,19 +34,22 @@ main {
   border-bottom: 2px solid #DDDDDD;
   padding: 2em;
 }
-.nav-bar div {
-  padding-left: 1em;
-  padding-right: 1em;
+.nav-bar ul {
+  list-style: none;
+  display: flex;
 }
-.nav-bar div a {
+.nav-bar ul li {
+  padding: 0 1em;
+}
+.nav-bar ul li a {
   text-decoration: none;
   color: inherit;
   padding: 1em;
 }
-.nav-bar div a:hover {
+.nav-bar ul li a:hover {
   border-bottom: 2px solid #b31312;
 }
-.nav-bar .a__active {
+.nav-bar ul li.a__active a {
   border-bottom: 2px solid #b31312;
 }
 

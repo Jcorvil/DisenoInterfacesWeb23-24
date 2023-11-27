@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 body {
 	margin: 0;
@@ -50,22 +50,27 @@ main {
 	border-bottom: 2px solid $color-borde;
 	padding: 2em;
 
-	div {
-		padding-left: 1em;
-		padding-right: 1em;
+	ul {
+		list-style: none;
+		display: flex;
 
-		a {
-			text-decoration: none;
-			color: inherit;
-			padding: 1em;
-		}
+		li {
+			padding: 0 1em;
 
-		a:hover {
-			border-bottom: 2px solid $color-borde-elemento-nav;
+			a {
+				text-decoration: none;
+				color: inherit;
+				padding: 1em;
+
+				&:hover {
+					border-bottom: 2px solid $color-borde-elemento-nav;
+				}
+			}
+
+			&.a__active a {
+				border-bottom: 2px solid $color-borde-elemento-nav;
+			}
 		}
-	}
-	.a__active {
-		border-bottom: 2px solid $color-borde-elemento-nav;
 	}
 }
 
@@ -100,11 +105,17 @@ main {
 		}
 	}
 
-	.main__publicacion section, p {
+	.main__publicacion section,
+	p {
 		@include tipografia-sinSerifa();
 	}
 
-	.main__publicacion h1, h2, h3, h4, h5, h6 {
+	.main__publicacion h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
 		@include tipografia-conSerifa();
 	}
 
@@ -137,12 +148,10 @@ main {
 			margin-right: 1em;
 			border-radius: 100%;
 		}
-
-
 	}
 }
 
-#autorFecha{
+#autorFecha {
 	@include tipografia-conSerifa();
 }
 
