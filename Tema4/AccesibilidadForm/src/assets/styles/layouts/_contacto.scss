@@ -1,0 +1,37 @@
+.contacto__main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .main__formularioContacto {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 1em;
+
+    border: 2px solid $ubriWeb-corporate;
+    border-radius: 10%;
+
+    padding: 2em;
+
+    background-color: $ubriWeb-bg;
+
+    .formularioContacto__GroupPassword {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .formularioContacto__GroupNombre {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .formularioContacto__GroupBotonera {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
