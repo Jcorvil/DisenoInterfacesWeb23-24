@@ -5,14 +5,28 @@ $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   "Segoe UI Symbol";
 $font-family-serif: "Georgia", "Times New Roman", serif;
 
-$ubriWeb-corporate: #000078;
-$ubriWeb-masterbrand: #73edff;
+$ubriWeb-corporate: #6fa271;
+$ubriWeb-corporate2: #978279;
+
+$ubriWeb-corporate3: #31343b;
+$ubriWeb-corporate3-scaled: color.scale($ubriWeb-corporate3, $lightness: 80%);
+
+$ubriWeb-corporate4: #6fa271;
+$ubriWeb-corporate4-scaled: color.scale($ubriWeb-corporate4, $lightness: 20%);
+
+$ubriWeb-corporate5: #efebd6;
+
+$ubriWeb-masterbrand: #ececec;
 $ubriWeb-bg: color.scale($ubriWeb-masterbrand, $lightness: 70%);
+
+$color-red: #b90000;
+$color-green: #788c56;
+$color-black: #1f1f1f;
 
 $mqMinWidth: 420px;
 
 @mixin iconos_pequenios($nombre_imagen: "error.png") {
-  background-image: url("../images/"+$nombre_imagen);
+  background-image: url("../images/" + $nombre_imagen);
   background-size: cover;
   background-position: center;
 

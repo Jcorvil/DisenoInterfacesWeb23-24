@@ -1,31 +1,69 @@
 <form action="" class="main__formularioContacto">
-    <div role="region" class="formularioContacto__GroupNombre">
+    <div role="region">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            autem fugit distinctio cum culpa quis fugiat. Nobis consequatur
+            asperiores a, velit expedita voluptates reprehenderit sunt quod
+            ipsum eum ratione explicabo?
+        </p>
+    </div>
+
+    <div role="region" class="formularioContacto__group">
         <label for="nombre" id="label__nombre" aria-label="input__nombre"
-            >Nombre</label
+            >Nombre <span class="color__red">*</span></label
         >
         <input
             type="text"
-            name="nombre"
+            name="input__nombre"
             id="nombre"
             aria-labelledby="label__nombre"
+            required
+            aria-required="true"
+            class="input__text"
+            placeholder="Escriba aqui su nombre"
         />
     </div>
-    <div role="region" class="formularioContacto__GroupPassword">
-        <label
-            for="input_password"
-            id="label_password"
-            aria-label="input_password"
-            >Contraseña</label
+    <div role="region" class="formularioContacto__group">
+        <label for="nombre" id="label__nombre" aria-label="input__nombre"
+            >Apellidos</label
         >
         <input
-            type="password"
-            id="input_password"
-            name="input_password"
+            type="text"
+            name="input__apellidos"
+            id="nombre"
+            aria-labelledby="label__apellidos"
             required
-            aria-labelledby="label_password"
+            aria-required="true"
+            class="input__text"
+            placeholder="Escriba aqui sus apellidos"
         />
     </div>
-    <div role="region" class="formularioContacto__GroupBotonera">
-        <button>Enviar</button>
+
+    <div class="formularioContacto__group--checkbox" role="region">
+        <input
+            type="checkbox"
+            name="input__condiciones"
+            id="input__condiciones"
+        />
+        <label for="input__condiciones"
+            >Acepte los términos y condiciones.</label
+        >
+    </div>
+
+    <div class="formularioContacto__group" role="region">
+        <p>Campos obligatorios <span class="color__red">*</span></p>
+    </div>
+
+    <div
+        role="region"
+        class="formularioContacto__group--botonera formularioContacto__group"
+    >
+        <button
+            class="button__normal button__normal--send"
+            role="button"
+            type="submit"
+        >
+            Enviar
+        </button>
     </div>
 </form>
