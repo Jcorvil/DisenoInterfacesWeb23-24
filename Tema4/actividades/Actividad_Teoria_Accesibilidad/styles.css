@@ -1,0 +1,41 @@
+#logoAccesibilidad {
+	width: 15%;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th,
+td {
+	border: 1px solid black;
+	padding: 1em;
+	background-color: #f1f1f1;
+
+	color: #000000;
+	font-size: medium;
+}
+
+th {
+	background-color: #ffffcc;
+	color: #000000;
+}
+
+.nombrePrincipio {
+	background-color: #e5d680;
+	color: #000000;
+}
+
+.separadorPrincipios {
+	td {
+		background-color: #ffffff;
+	}
+}

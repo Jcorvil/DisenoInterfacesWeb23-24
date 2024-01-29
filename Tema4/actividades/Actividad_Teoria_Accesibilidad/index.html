@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tabla accesibilidad</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+
+	<body>
+		<header>
+			<img id="logoAccesibilidad" src="imgs/logo.png" alt="Logo accesibility" />
+			<h1>Tabla sobre pautas de accesibilidad</h1>
+		</header>
+
+		<section>
+			<table summary="Tabla sobre pautas de accesibilidad">
+				<thead>
+					<tr>
+						<th scope="col">Principio</th>
+						<th scope="col">Pauta</th>
+						<th scope="col">Criterio A</th>
+						<th scope="col">Criterio AA</th>
+						<th scope="col">Criterio AAA</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td scope="row" rowspan="4" class="nombrePrincipio">Perceptible</td>
+						<td>1 - Alternativas textuales</td>
+						<td aria-describedby="descripcion-criterio-A">
+							Contenido no textual: Todo contenido no textual que se presenta al
+							usuario tiene una alternativa textual que cumple el mismo
+							propósito, excepto en las situaciones enumeradas a continuación.
+						</td>
+					</tr>
+					<tr>
+						<td>2 - Medios tempodependientes</td>
+						<td aria-describedby="descripcion-criterio-A">
+							Sólo audio y sólo vídeo (grabado): Para contenido sólo audio
+							grabado y contenido sólo vídeo grabado, se cumple lo siguiente,
+							excepto cuando el audio o el vídeo es un contenido multimedia
+							alternativo al texto y está claramente identificado como tal.
+							<br />
+							<br />
+							Subtítulos (grabados): Se proporcionan subtítulos para el
+							contenido de audio grabado dentro de contenido multimedia
+							sincronizado, excepto cuando la presentación es un contenido
+							multimedia alternativo al texto y está claramente identificado
+							como tal.
+						</td>
+						<td aria-describedby="descripcion-criterio-AA">
+							Subtítulos (en directo): Se proporcionan subtítulos para todo el
+							contenido de audio en directo de los multimedia sincronizados.
+							<br />
+							<br />
+							Audiodescripción (grabado): Se proporciona una audiodescripción
+							para todo el contenido de vídeo grabado dentro de contenido
+							multimedia sincronizado.
+						</td>
+						<td aria-describedby="descripcion-criterio-AAA">
+							Lengua de señas (grabado): Se proporciona una interpretación en
+							lengua de señas para todo el contenido de audio grabado dentro de
+							contenido multimedia sincronizado.
+							<br />
+							<br />
+							Audiodescripción ampliada (grabada): Cuando las pausas en el audio
+							de primer plano son insuficientes para permitir que la
+							audiodescripción comunique el significado del vídeo, se
+							proporciona una audiodescripción ampliada para todos los
+							contenidos de vídeo grabado dentro de contenido multimedia
+							sincronizado.
+						</td>
+					</tr>
+					<tr>
+						<td>3 - Adaptable</td>
+						<td aria-describedby="descripcion-criterio-A">
+							Información y relaciones: La información, estructura y relaciones
+							comunicadas a través de la presentación pueden ser determinadas
+							por software o están disponibles como texto.
+							<br />
+							<br />
+							Secuencia significativa: Cuando la secuencia en que se presenta el
+							contenido afecta a su significado, se puede determinar por
+							software la secuencia correcta de lectura.
+						</td>
+					</tr>
+					<tr>
+						<td>4 - Distinguible</td>
+						<td aria-describedby="descripcion-criterio-A">
+							Uso del color: El color no se usa como único medio visual para
+							transmitir la información, indicar una acción, solicitar una
+							respuesta o distinguir un elemento visual.
+							<br />
+							<br />
+							Control del audio: Si el audio de una página web suena
+							automáticamente durante más de 3 segundos, se proporciona ya sea
+							un mecanismo para pausar o detener el audio, o un mecanismo para
+							controlar el volumen del sonido que es independiente del nivel de
+							volumen global del sistema.
+						</td>
+						<td aria-describedby="descripcion-criterio-AA">
+							Contraste (mínimo): La presentación visual de texto e imágenes de
+							texto tiene una relación de contraste de, al menos, 4.5:1.
+							<br />
+							<br />
+							Imágenes de texto: Si con las tecnologías que se están utilizando
+							se puede conseguir la presentación visual deseada, se utiliza
+							texto para transmitir la información en vez de imágenes de texto,
+							excepto en los siguientes casos.
+						</td>
+						<td aria-describedby="descripcion-criterio-AAA">
+							Contraste (mejorado): La presentación visual de texto e imágenes
+							de texto tiene una relación de contraste de, al menos, 7:1,
+							excepto en los siguientes casos.
+							<br />
+							<br />
+							Imágenes de texto (sin excepciones): Las imágenes de texto sólo se
+							utilizan como simple decoración o cuando una forma de presentación
+							particular del texto resulta esencial para la información
+							transmitida.
+						</td>
+					</tr>
+
+					<tr class="separadorPrincipios">
+						<td colspan="6"></td>
+					</tr>
+
+					<tr>
+						<td scope="row" rowspan="4" class="nombrePrincipio">Operable</td>
+						<td>1 - Accesible por teclado</td>
+						<td aria-describedby="descripcion-criterio-A">
+							Teclado: Toda la funcionalidad del contenido es operable a través
+							de una interfaz de teclado sin que se requiera una determinada
+							velocidad para cada pulsación individual de las teclas, excepto
+							cuando la función interna requiere de una entrada que depende del
+							trayecto de los movimientos del usuario y no sólo de los puntos
+							inicial y final.
+						</td>
+						<td></td>
+						<td aria-describedby="descripcion-criterio-AAA">
+							Teclado (sin excepciones): Toda la funcionalidad del contenido se
+							puede operar a través de una interfaz de teclado sin requerir una
+							determinada velocidad en la pulsación de las teclas.
+						</td>
+					</tr>
+					<tr>
+						<td>2 - Tiempo suficiente</td>
+						<td aria-describedby="descripcion-criterio-A">
+							Poner en pausa, detener, ocultar: Para la información que tiene
+							movimiento, parpadeo, se desplaza o se actualiza automáticamente,
+							se cumplen todos los casos siguientes:
+							<ul>
+								<li>
+									Movimiento, parpadeo, desplazamiento: Para toda información
+									que se mueve, parpadea o se desplaza, que (1) comienza
+									automáticamente, (2) dura más de cinco segundos y (3) se
+									presenta en paralelo con otro contenido, existe un mecanismo
+									para que el usuario la pueda poner en pausa, detener u
+									ocultar, a menos que el movimiento, parpadeo o desplazamiento
+									sea parte esencial de una actividad.
+								</li>
+								<li>
+									Actualización automática: Para toda información que se
+									actualiza automáticamente, que (1) se inicia automáticamente y
+									(2) se presenta en paralelo con otro contenido, existe un
+									mecanismo para que el usuario la pueda poner en pausa, detener
+									u ocultar, o controlar la frecuencia de actualización a menos
+									que la actualización automática sea parte esencial de una
+									actividad.
+								</li>
+							</ul>
+						</td>
+						<td></td>
+						<td aria-describedby="descripcion-criterio-AAA">
+							Sin tiempo: El tiempo no es parte esencial del evento o actividad
+							presentada por el contenido, exceptuando los multimedia
+							sincronizados no interactivos y los eventos en tiempo real.
+						</td>
+					</tr>
+					<tr>
+						<td>3 - Convulsiones</td>
+						<td aria-describedby="descripcion-criterio-A">
+							Umbral de tres destellos o menos: Las páginas web no contienen
+							nada que destelle más de tres veces en un segundo, o el destello
+							está por debajo del umbral de destello general y de destello rojo.
+						</td>
+						<td></td>
+						<td aria-describedby="descripcion-criterio-AAA">
+							Tres destellos: Las páginas web no contienen nada que destelle más
+							de tres veces por segundo.
+						</td>
+					</tr>
+					<tr>
+						<td>4 - Navegable</td>
+						<td aria-describedby="descripcion-criterio-A">
+							Titulado de páginas: Las páginas web tienen títulos que describen
+							su temática o propósito.
+						</td>
+						<td aria-describedby="descripcion-criterio-AA">
+							Encabezados y etiquetas: Los encabezados y etiquetas describen el
+							tema o propósito.
+						</td>
+						<td aria-describedby="descripcion-criterio-AAA">
+							Ubicación: Se proporciona información acerca de la ubicación del
+							usuario dentro de un conjunto de páginas web.
+						</td>
+					</tr>
+
+					<tr class="separadorPrincipios">
+						<td colspan="6"></td>
+					</tr>
+
+					<tr>
+						<td scope="row" rowspan="4" class="nombrePrincipio">
+							Comprensible
+						</td>
+					</tr>
+					<td>1 - Legible</td>
+					<td aria-describedby="descripcion-criterio-A">
+						Idioma de la página: El idioma predeterminado de cada página web
+						puede ser determinado por software.
+					</td>
+					<td aria-describedby="descripcion-criterio-AA">
+						Idioma de las partes: El idioma de cada pasaje o frase en el
+						contenido puede ser determinado por software, excepto los nombres
+						propios, términos técnicos, palabras en un idioma indeterminado y
+						palabras o frases que se hayan convertido en parte natural del texto
+						que las rodea.
+					</td>
+					<td aria-describedby="descripcion-criterio-AAA">
+						Palabras inusuales: Se proporciona un mecanismo para identificar las
+						definiciones específicas de palabras o frases usadas de modo inusual
+						o restringido, incluyendo expresiones idiomáticas y jerga.
+					</td>
+					<tr>
+						<td>2 - Predecible</td>
+						<td aria-describedby="descripcion-criterio-A">
+							Al recibir el foco: Cuando cualquier componente recibe el foco, no
+							inicia ningún cambio en el contexto.
+						</td>
+						<td aria-describedby="descripcion-criterio-AA">
+							Identificación coherente: Los componentes que tienen la misma
+							funcionalidad dentro de un conjunto de páginas web son
+							identificados de manera coherente.
+						</td>
+						<td aria-describedby="descripcion-criterio-AAA">
+							Cambios a petición: Los cambios en el contexto son iniciados
+							únicamente a solicitud del usuario o se proporciona un mecanismo
+							para detener tales cambios.
+						</td>
+					</tr>
+					<tr>
+						<td>3 - Entrada de datos asistida</td>
+						<td aria-describedby="descripcion-criterio-A">
+							Identificación de errores: Si se detecta automáticamente un error
+							en la entrada de datos, el elemento erróneo es identificado y el
+							error se describe al usuario mediante un texto.
+						</td>
+						<td aria-describedby="descripcion-criterio-AA">
+							Sugerencias ante errores: Si se detecta automáticamente un error
+							en la entrada de datos y se dispone de sugerencias para hacer la
+							corrección, entonces se presentan las sugerencias al usuario, a
+							menos que esto ponga en riesgo la seguridad o el propósito del
+							contenido.
+						</td>
+						<td aria-describedby="descripcion-criterio-AAA">
+							Ayuda: Se proporciona ayuda dependiente del contexto .
+						</td>
+					</tr>
+
+					<tr class="separadorPrincipios">
+						<td colspan="6"></td>
+					</tr>
+
+					<tr>
+						<td scope="row" rowspan="1" class="nombrePrincipio">Robusto</td>
+						<td>1 - Compatible</td>
+						<td aria-describedby="descripcion-criterio-A">
+							Procesamiento: En los contenidos implementados mediante el uso de
+							lenguajes de marcas, los elementos tienen las etiquetas de
+							apertura y cierre completas; los elementos están anidados de
+							acuerdo a sus especificaciones; los elementos no contienen
+							atributos duplicados y los ID son únicos, excepto cuando las
+							especificaciones permitan estas características.
+							<br />
+							<br />
+							Nombre, función, valor: Para todos los componentes de la interfaz
+							de usuario (incluyendo pero no limitado a: elementos de
+							formulario, enlaces y componentes generados por scripts), el
+							nombre y la función pueden ser determinados por software; los
+							estados, propiedades y valores que pueden ser asignados por el
+							usuario pueden ser especificados por software; y los cambios en
+							estos elementos se encuentran disponibles para su consulta por las
+							aplicaciones de usuario, incluyendo las ayudas técnicas.
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<h3>
+			1. Indica y explica usando tus palabras, al menos 1 herramienta que se use
+			para poder superar las barreras presentadas por las diferentes
+			diversidades funcionales vistas en clase.
+		</h3>
+		<p>
+			<b>TTS (Text to Speech) o texto a voz:</b><br />
+			-Es una tecnología que convierte el texto escrito en voz para facilitar la
+			compresión de la información, sobre todo para personas con dificultades de
+			lectura, dislexia o discapacidades visuales. <br />
+			El software lee el texto y lo transforma a audio, leyéndolo en voz alta
+			según las preferencias de la persona que lo usa (idioma, velocidad,
+			volumen, tono de voz, etc.).
+		</p>
+
+		<br />
+		<br />
+		<br />
+		<br />
+	</body>
+</html>
