@@ -17,18 +17,20 @@
 			<table summary="Tabla sobre pautas de accesibilidad">
 				<thead>
 					<tr>
-						<th scope="col">Principio</th>
-						<th scope="col">Pauta</th>
-						<th scope="col">Criterio A</th>
-						<th scope="col">Criterio AA</th>
-						<th scope="col">Criterio AAA</th>
+						<th scope="col" tabindex="1">Principio</th>
+						<th scope="col" tabindex="1">Pauta</th>
+						<th scope="col" tabindex="1">Criterio A</th>
+						<th scope="col" tabindex="1">Criterio AA</th>
+						<th scope="col" tabindex="1">Criterio AAA</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td scope="row" rowspan="4" class="nombrePrincipio">Perceptible</td>
-						<td>1 - Alternativas textuales</td>
-						<td aria-describedby="descripcion-criterio-A">
+						<td scope="row" rowspan="4" class="nombrePrincipio" tabindex="1">
+							Perceptible
+						</td>
+						<td tabindex="1">1 - Alternativas textuales</td>
+						<td aria-describedby="descripcion-criterio-A" tabindex="1">
 							Contenido no textual: Todo contenido no textual que se presenta al
 							usuario tiene una alternativa textual que cumple el mismo
 							propósito, excepto en las situaciones enumeradas a continuación.
@@ -36,7 +38,7 @@
 					</tr>
 					<tr>
 						<td>2 - Medios tempodependientes</td>
-						<td aria-describedby="descripcion-criterio-A">
+						<td aria-describedby="descripcion-criterio-A" tabindex="1">
 							Sólo audio y sólo vídeo (grabado): Para contenido sólo audio
 							grabado y contenido sólo vídeo grabado, se cumple lo siguiente,
 							excepto cuando el audio o el vídeo es un contenido multimedia
@@ -49,7 +51,7 @@
 							multimedia alternativo al texto y está claramente identificado
 							como tal.
 						</td>
-						<td aria-describedby="descripcion-criterio-AA">
+						<td aria-describedby="descripcion-criterio-AA" tabindex="1">
 							Subtítulos (en directo): Se proporcionan subtítulos para todo el
 							contenido de audio en directo de los multimedia sincronizados.
 							<br />
@@ -58,7 +60,7 @@
 							para todo el contenido de vídeo grabado dentro de contenido
 							multimedia sincronizado.
 						</td>
-						<td aria-describedby="descripcion-criterio-AAA">
+						<td aria-describedby="descripcion-criterio-AAA" tabindex="1">
 							Lengua de señas (grabado): Se proporciona una interpretación en
 							lengua de señas para todo el contenido de audio grabado dentro de
 							contenido multimedia sincronizado.
@@ -73,8 +75,8 @@
 						</td>
 					</tr>
 					<tr>
-						<td>3 - Adaptable</td>
-						<td aria-describedby="descripcion-criterio-A">
+						<td tabindex="1">3 - Adaptable</td>
+						<td aria-describedby="descripcion-criterio-A" tabindex="1">
 							Información y relaciones: La información, estructura y relaciones
 							comunicadas a través de la presentación pueden ser determinadas
 							por software o están disponibles como texto.
@@ -86,8 +88,8 @@
 						</td>
 					</tr>
 					<tr>
-						<td>4 - Distinguible</td>
-						<td aria-describedby="descripcion-criterio-A">
+						<td tabindex="1">4 - Distinguible</td>
+						<td aria-describedby="descripcion-criterio-A" tabindex="1">
 							Uso del color: El color no se usa como único medio visual para
 							transmitir la información, indicar una acción, solicitar una
 							respuesta o distinguir un elemento visual.
@@ -99,7 +101,7 @@
 							controlar el volumen del sonido que es independiente del nivel de
 							volumen global del sistema.
 						</td>
-						<td aria-describedby="descripcion-criterio-AA">
+						<td aria-describedby="descripcion-criterio-AA" tabindex="1">
 							Contraste (mínimo): La presentación visual de texto e imágenes de
 							texto tiene una relación de contraste de, al menos, 4.5:1.
 							<br />
@@ -109,7 +111,7 @@
 							texto para transmitir la información en vez de imágenes de texto,
 							excepto en los siguientes casos.
 						</td>
-						<td aria-describedby="descripcion-criterio-AAA">
+						<td aria-describedby="descripcion-criterio-AAA" tabindex="1">
 							Contraste (mejorado): La presentación visual de texto e imágenes
 							de texto tiene una relación de contraste de, al menos, 7:1,
 							excepto en los siguientes casos.
@@ -127,9 +129,11 @@
 					</tr>
 
 					<tr>
-						<td scope="row" rowspan="4" class="nombrePrincipio">Operable</td>
-						<td>1 - Accesible por teclado</td>
-						<td aria-describedby="descripcion-criterio-A">
+						<td scope="row" rowspan="4" class="nombrePrincipio" tabindex="1">
+							Operable
+						</td>
+						<td tabindex="1">1 - Accesible por teclado</td>
+						<td aria-describedby="descripcion-criterio-A" tabindex="1">
 							Teclado: Toda la funcionalidad del contenido es operable a través
 							de una interfaz de teclado sin que se requiera una determinada
 							velocidad para cada pulsación individual de las teclas, excepto
@@ -138,15 +142,15 @@
 							inicial y final.
 						</td>
 						<td></td>
-						<td aria-describedby="descripcion-criterio-AAA">
+						<td aria-describedby="descripcion-criterio-AAA" tabindex="1">
 							Teclado (sin excepciones): Toda la funcionalidad del contenido se
 							puede operar a través de una interfaz de teclado sin requerir una
 							determinada velocidad en la pulsación de las teclas.
 						</td>
 					</tr>
 					<tr>
-						<td>2 - Tiempo suficiente</td>
-						<td aria-describedby="descripcion-criterio-A">
+						<td tabindex="1">2 - Tiempo suficiente</td>
+						<td aria-describedby="descripcion-criterio-A" tabindex="1">
 							Poner en pausa, detener, ocultar: Para la información que tiene
 							movimiento, parpadeo, se desplaza o se actualiza automáticamente,
 							se cumplen todos los casos siguientes:
@@ -172,36 +176,36 @@
 							</ul>
 						</td>
 						<td></td>
-						<td aria-describedby="descripcion-criterio-AAA">
+						<td aria-describedby="descripcion-criterio-AAA" tabindex="1">
 							Sin tiempo: El tiempo no es parte esencial del evento o actividad
 							presentada por el contenido, exceptuando los multimedia
 							sincronizados no interactivos y los eventos en tiempo real.
 						</td>
 					</tr>
 					<tr>
-						<td>3 - Convulsiones</td>
-						<td aria-describedby="descripcion-criterio-A">
+						<td tabindex="1">3 - Convulsiones</td>
+						<td aria-describedby="descripcion-criterio-A" tabindex="1">
 							Umbral de tres destellos o menos: Las páginas web no contienen
 							nada que destelle más de tres veces en un segundo, o el destello
 							está por debajo del umbral de destello general y de destello rojo.
 						</td>
 						<td></td>
-						<td aria-describedby="descripcion-criterio-AAA">
+						<td aria-describedby="descripcion-criterio-AAA" tabindex="1">
 							Tres destellos: Las páginas web no contienen nada que destelle más
 							de tres veces por segundo.
 						</td>
 					</tr>
 					<tr>
-						<td>4 - Navegable</td>
-						<td aria-describedby="descripcion-criterio-A">
+						<td tabindex="1">4 - Navegable</td>
+						<td aria-describedby="descripcion-criterio-A" tabindex="1">
 							Titulado de páginas: Las páginas web tienen títulos que describen
 							su temática o propósito.
 						</td>
-						<td aria-describedby="descripcion-criterio-AA">
+						<td aria-describedby="descripcion-criterio-AA" tabindex="1">
 							Encabezados y etiquetas: Los encabezados y etiquetas describen el
 							tema o propósito.
 						</td>
-						<td aria-describedby="descripcion-criterio-AAA">
+						<td aria-describedby="descripcion-criterio-AAA" tabindex="1">
 							Ubicación: Se proporciona información acerca de la ubicación del
 							usuario dentro de un conjunto de páginas web.
 						</td>
@@ -212,59 +216,59 @@
 					</tr>
 
 					<tr>
-						<td scope="row" rowspan="4" class="nombrePrincipio">
+						<td scope="row" rowspan="4" class="nombrePrincipio" tabindex="1">
 							Comprensible
 						</td>
 					</tr>
-					<td>1 - Legible</td>
-					<td aria-describedby="descripcion-criterio-A">
+					<td tabindex="1">1 - Legible</td>
+					<td aria-describedby="descripcion-criterio-A" tabindex="1">
 						Idioma de la página: El idioma predeterminado de cada página web
 						puede ser determinado por software.
 					</td>
-					<td aria-describedby="descripcion-criterio-AA">
+					<td aria-describedby="descripcion-criterio-AA" tabindex="1">
 						Idioma de las partes: El idioma de cada pasaje o frase en el
 						contenido puede ser determinado por software, excepto los nombres
 						propios, términos técnicos, palabras en un idioma indeterminado y
 						palabras o frases que se hayan convertido en parte natural del texto
 						que las rodea.
 					</td>
-					<td aria-describedby="descripcion-criterio-AAA">
+					<td aria-describedby="descripcion-criterio-AAA" tabindex="1">
 						Palabras inusuales: Se proporciona un mecanismo para identificar las
 						definiciones específicas de palabras o frases usadas de modo inusual
 						o restringido, incluyendo expresiones idiomáticas y jerga.
 					</td>
 					<tr>
-						<td>2 - Predecible</td>
-						<td aria-describedby="descripcion-criterio-A">
+						<td tabindex="1">2 - Predecible</td>
+						<td aria-describedby="descripcion-criterio-A" tabindex="1">
 							Al recibir el foco: Cuando cualquier componente recibe el foco, no
 							inicia ningún cambio en el contexto.
 						</td>
-						<td aria-describedby="descripcion-criterio-AA">
+						<td aria-describedby="descripcion-criterio-AA" tabindex="1">
 							Identificación coherente: Los componentes que tienen la misma
 							funcionalidad dentro de un conjunto de páginas web son
 							identificados de manera coherente.
 						</td>
-						<td aria-describedby="descripcion-criterio-AAA">
+						<td aria-describedby="descripcion-criterio-AAA" tabindex="1">
 							Cambios a petición: Los cambios en el contexto son iniciados
 							únicamente a solicitud del usuario o se proporciona un mecanismo
 							para detener tales cambios.
 						</td>
 					</tr>
 					<tr>
-						<td>3 - Entrada de datos asistida</td>
-						<td aria-describedby="descripcion-criterio-A">
+						<td tabindex="1">3 - Entrada de datos asistida</td>
+						<td aria-describedby="descripcion-criterio-A" tabindex="1">
 							Identificación de errores: Si se detecta automáticamente un error
 							en la entrada de datos, el elemento erróneo es identificado y el
 							error se describe al usuario mediante un texto.
 						</td>
-						<td aria-describedby="descripcion-criterio-AA">
+						<td aria-describedby="descripcion-criterio-AA" tabindex="1">
 							Sugerencias ante errores: Si se detecta automáticamente un error
 							en la entrada de datos y se dispone de sugerencias para hacer la
 							corrección, entonces se presentan las sugerencias al usuario, a
 							menos que esto ponga en riesgo la seguridad o el propósito del
 							contenido.
 						</td>
-						<td aria-describedby="descripcion-criterio-AAA">
+						<td aria-describedby="descripcion-criterio-AAA" tabindex="1">
 							Ayuda: Se proporciona ayuda dependiente del contexto .
 						</td>
 					</tr>
@@ -274,9 +278,11 @@
 					</tr>
 
 					<tr>
-						<td scope="row" rowspan="1" class="nombrePrincipio">Robusto</td>
-						<td>1 - Compatible</td>
-						<td aria-describedby="descripcion-criterio-A">
+						<td scope="row" rowspan="1" class="nombrePrincipio" tabindex="1">
+							Robusto
+						</td>
+						<td tabindex="1">1 - Compatible</td>
+						<td aria-describedby="descripcion-criterio-A" tabindex="1">
 							Procesamiento: En los contenidos implementados mediante el uso de
 							lenguajes de marcas, los elementos tienen las etiquetas de
 							apertura y cierre completas; los elementos están anidados de
@@ -299,12 +305,12 @@
 			</table>
 		</section>
 
-		<h3>
+		<h3 tabindex="1">
 			1. Indica y explica usando tus palabras, al menos 1 herramienta que se use
 			para poder superar las barreras presentadas por las diferentes
 			diversidades funcionales vistas en clase.
 		</h3>
-		<p>
+		<p tabindex="1">
 			<b>TTS (Text to Speech) o texto a voz:</b><br />
 			-Es una tecnología que convierte el texto escrito en voz para facilitar la
 			compresión de la información, sobre todo para personas con dificultades de
