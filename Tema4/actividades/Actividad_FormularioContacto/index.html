@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contacto</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header>
+			<img src="imgs/logo.png" alt="Logo página web" />
+			<nav id="header__nav">
+				<a href="#">INICIO</a>
+				<a href="#">NOVEDADES</a>
+				<a href="#">CONTACTO</a>
+				<a href="#">BUSCAR</a>
+			</nav>
+		</header>
+		<main>
+			<form class="main__formularioContacto">
+				<input
+					type="text"
+					name="input__nombre"
+					id="input__nombre"
+					placeholder="Nombre"
+				/>
+				<input
+					type="text"
+					name="input__email"
+					id="input__email"
+					placeholder="Email"
+				/>
+				<input
+					type="text"
+					name="input__asunto"
+					id="input__asunto"
+					placeholder="¿Por que nos quiere contactar?"
+				/>
+				<textarea
+					name="input__descripcion"
+					id="input__descripcion"
+					placeholder="Describa el asunto."
+					rows="5"
+					resize="none"
+				></textarea>
+
+				<button type="submit"><b>ENVIAR</b></button>
+			</form>
+			<div
+				role="group"
+				aria-label="Grupo de imágenes"
+				class="main__otrosContactos"
+			>
+				<p>Tambien puedes contactar con nosotros en:</p>
+				<div role="imgion" class="main__otrosContactos--iconos">
+					<a href="#"><img src="imgs/iconCorreo.png" alt="correo" /></a>
+					<a href="#"><img src="imgs/iconTwitter.png" alt="twitter" /></a>
+					<a href="#"> <img src="imgs/iconInstagram.png" alt="instagram" /></a>
+				</div>
+				<div role="imgion" class="main__otrosContactos--iconoWhats">
+					<img src="imgs/iconWhatsapp.png" alt="whatsapp" />
+					<p>+34 600606060</p>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

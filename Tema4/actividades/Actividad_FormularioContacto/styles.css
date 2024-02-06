@@ -1,0 +1,142 @@
+@font-face {
+	font-family: "JejuGothic";
+	src: url("fonts/JejuGothic-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "InterRegular";
+	src: url("fonts/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "InterMedium";
+	src: url("fonts/Inter-Medium.ttf") format("truetype");
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+body {
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(16, 1fr);
+	font-size: 1.5em;
+}
+
+header {
+	grid-column: 1 / -1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: "JejuGothic";
+
+	img {
+		margin-bottom: 5%;
+	}
+
+	background-image: url("imgs/separador.png");
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+
+#header__nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	a {
+		margin: 1em;
+		padding: 1em;
+		border-bottom: 5px solid black;
+		text-align: center;
+	}
+
+	a:hover {
+		border-bottom-style: double;
+		transition: 0.3s ease-in-out;
+	}
+}
+
+main {
+	display: flex;
+	grid-template-columns: repeat(16, 1fr);
+	justify-content: space-between;
+	grid-column: 1 / -1;
+
+	height: 100vh;
+	width: 100%;
+
+	justify-content: center;
+
+	background-image: url("imgs/telaTranslucid.jpg");
+	background-repeat: repeat;
+}
+
+.main__formularioContacto {
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+
+	width: 30%;
+	margin-top: 5em;
+
+	input,
+	textarea {
+		padding: 1em;
+		margin: 3px;
+
+		font-family: "InterRegular";
+		font-size: 0.9em;
+	}
+
+	#input__nombre,
+	#input__email {
+		border-radius: 10px;
+	}
+
+	button {
+		margin-top: 1em;
+		border: none;
+		background-color: #577b4a;
+		color: #ffffff;
+
+		padding: 1em;
+		width: 20%;
+		border-radius: 5px;
+
+		font-family: "InterRegular";
+		font-size: large;
+	}
+}
+
+.main__otrosContactos {
+	display: flex;
+	flex-direction: column;
+	margin-top: 6em;
+	padding: 1em;
+
+	width: 20%;
+	height: 40%;
+
+	font-family: "InterRegular";
+	font-size: 0.9em;
+
+	background-color: rgb(255, 255, 255, 0.4);
+
+	border-radius: 10px;
+
+	text-align: center;
+
+	img {
+		width: 20%;
+		margin: 5px;
+	}
+}
+
+#input__descripcion {
+	padding: 1em;
+	margin: 3px;
+	resize: none;
+}
