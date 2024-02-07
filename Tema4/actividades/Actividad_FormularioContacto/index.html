@@ -5,8 +5,32 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Contacto</title>
 		<link rel="stylesheet" href="styles.css" />
+		<script>
+			function cambiarTipografia() {
+				var cuerpo = document.querySelector("body");
+				var main = document.querySelector("main");
+
+				if (!cuerpo.classList.contains("open-dyslexic")) {
+					cuerpo.classList.remove("jeju-gothic", "inter-regular");
+					cuerpo.classList.add("open-dyslexic");
+					main.classList.remove("jeju-gothic", "inter-regular");
+					main.classList.add("open-dyslexic");
+				} else {
+					cuerpo.classList.remove("open-dyslexic");
+					cuerpo.classList.add("jeju-gothic", "inter-regular");
+					main.classList.remove("open-dyslexic");
+					main.classList.add("jeju-gothic", "inter-regular");
+				}
+			}
+
+			document.addEventListener("DOMContentLoaded", function () {
+				var botonCambioTipografia =
+					document.getElementById("cambioDeTipografia");
+				botonCambioTipografia.addEventListener("click", cambiarTipografia);
+			});
+		</script>
 	</head>
-	<body>
+	<body class="jeju-gothic inter-regular">
 		<header>
 			<img src="imgs/logo.png" alt="Logo página web" />
 			<nav id="header__nav">
@@ -15,8 +39,11 @@
 				<a href="#">CONTACTO</a>
 				<a href="#">BUSCAR</a>
 			</nav>
+			<button id="cambioDeTipografia" alt="Cambio de tipografía">
+				<img src="imgs/iconTipografia.png" alt="Cambio de tipografía" />
+			</button>
 		</header>
-		<main>
+		<main class="inter-regular">
 			<form class="main__formularioContacto">
 				<input
 					type="text"
@@ -52,14 +79,14 @@
 				class="main__otrosContactos"
 			>
 				<p>Tambien puedes contactar con nosotros en:</p>
-				<div role="imgion" class="main__otrosContactos--iconos">
-					<a href="#"><img src="imgs/iconCorreo.png" alt="correo" /></a>
-					<a href="#"><img src="imgs/iconTwitter.png" alt="twitter" /></a>
-					<a href="#"> <img src="imgs/iconInstagram.png" alt="instagram" /></a>
+				<div role="img" class="main__otrosContactos--iconos">
+					<a href="#" aria-label="Enlace a correo electrónico"><img src="imgs/iconCorreo.png" alt="Icono de correo electrónico" /></a>
+					<a href="#" aria-label="Enlace a twitter"><img src="imgs/iconTwitter.png" alt="Icono de twitter" /></a>
+					<a href="#" aria-label="Enlace a instagram"> <img src="imgs/iconInstagram.png" alt=" Icono de instagram" /></a>
 				</div>
-				<div role="imgion" class="main__otrosContactos--iconoWhats">
-					<img src="imgs/iconWhatsapp.png" alt="whatsapp" />
-					<p>+34 600606060</p>
+				<div role="img" class="main__otrosContactos--iconoWhats">
+					<img src="imgs/iconWhatsapp.png" alt="Icono de Whatsapp" />
+					<p aria-label="Número de contacto por Whatsapp">+34 600606060</p>
 				</div>
 			</div>
 		</main>

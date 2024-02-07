@@ -1,3 +1,5 @@
+/* --------------------TIPOGRAFÍAS-------------------- */
+
 @font-face {
 	font-family: "JejuGothic";
 	src: url("fonts/JejuGothic-Regular.ttf") format("truetype");
@@ -12,6 +14,31 @@
 	font-family: "InterMedium";
 	src: url("fonts/Inter-Medium.ttf") format("truetype");
 }
+
+@font-face {
+	font-family: "OpenDyslexic";
+	src: url("fonts/OpenDyslexic-Regular.otf") format("truetype");
+}
+
+body.jeju-gothic {
+	font-family: "JejuGothic";
+}
+
+main.inter-regular {
+	font-family: "InterRegular";
+}
+
+/* Declaramos donde se encuentran los elementos con la tipografía que queremos cambiar */
+body.open-dyslexic header,
+body.open-dyslexic main,
+body.open-dyslexic button,
+body.open-dyslexic .main__formularioContacto,
+body.open-dyslexic .main__otrosContactos,
+body.open-dyslexic ::placeholder {
+	font-family: "OpenDyslexic";
+}
+
+/* --------------------CSS PRINCIPAL-------------------- */
 
 a {
 	text-decoration: none;
@@ -31,6 +58,8 @@ header {
 	flex-direction: column;
 	align-items: center;
 	font-family: "JejuGothic";
+
+	position: relative;
 
 	img {
 		margin-bottom: 5%;
@@ -56,6 +85,26 @@ header {
 	a:hover {
 		border-bottom-style: double;
 		transition: 0.3s ease-in-out;
+	}
+}
+
+#cambioDeTipografia {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	right: 2em;
+	top: 12em;
+
+	background: transparent;
+	border: none;
+
+	img {
+		height: 4em;
+	}
+	img:hover {
+		cursor: pointer;
+		transition: 0.3s ease-in-out;
+		transform: scale(1.1);
 	}
 }
 
