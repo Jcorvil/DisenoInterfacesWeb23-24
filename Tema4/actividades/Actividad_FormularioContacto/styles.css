@@ -93,13 +93,13 @@ header {
 	align-items: center;
 	position: absolute;
 	right: 2em;
-	top: 12em;
+	top: 10em;
 
 	background: transparent;
 	border: none;
 
 	img {
-		height: 4em;
+		height: 6em;
 	}
 	img:hover {
 		cursor: pointer;
