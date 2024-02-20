@@ -1,0 +1,11 @@
+.index__main {
+  .main__picture {
+    overflow: hidden;
+    max-height: 100vh;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
