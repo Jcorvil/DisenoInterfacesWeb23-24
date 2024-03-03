@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Culinary Connect</title>
+		<link rel="stylesheet" href="styles.css" />
+		<script>
+			function cambiarTipografia() {
+				var cuerpo = document.querySelector("body");
+				var main = document.querySelector("main");
+
+				if (!cuerpo.classList.contains("open-dyslexic")) {
+					cuerpo.classList.remove("jeju-gothic", "inter-regular");
+					cuerpo.classList.add("open-dyslexic");
+					main.classList.remove("jeju-gothic", "inter-regular");
+					main.classList.add("open-dyslexic");
+				} else {
+					cuerpo.classList.remove("open-dyslexic");
+					cuerpo.classList.add("jeju-gothic", "inter-regular");
+					main.classList.remove("open-dyslexic");
+					main.classList.add("jeju-gothic", "inter-regular");
+				}
+			}
+
+			document.addEventListener("DOMContentLoaded", function () {
+				var botonCambioTipografia =
+					document.getElementById("cambioDeTipografia");
+				botonCambioTipografia.addEventListener("click", cambiarTipografia);
+			});
+		</script>
+	</head>
+	<body class="jeju-gothic inter-regular">
+		<header>
+			<nav id="header__nav">
+				<a href="#">INICIO</a>
+				<a href="#">NOVEDADES</a>
+				<a href="#">CONTACTO</a>
+				<a href="#">BUSCAR</a>
+			</nav>
+		</header>
+		<main class="inter-regular">
+			<picture id="logo__picture">
+				<source type="image/svg+xml" srcset="imgs/logo.svg" />
+				<img id="logo" src="imgs/logo.png" alt="Logo Culinary Connect" />
+			</picture>
+			<div>
+				<h3 id="slogan">¿Que vamos a comer hoy?</h3>
+				<h3 id="info">
+					Descubre nuevas recetas <a href="#">aquí</a>, ¡o usa nuestro
+					<a href="#">buscador</a>!
+				</h3>
+			</div>
+		</main>
+	</body>
+</html>
