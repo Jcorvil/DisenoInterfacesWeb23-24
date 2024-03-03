@@ -82,6 +82,7 @@ header {
 	align-items: center;
 
 	a {
+		display: inline-block;
 		margin: 1em;
 		padding: 1em;
 		border-bottom: 5px solid black;
@@ -91,6 +92,7 @@ header {
 	a:hover {
 		border-bottom-style: double;
 		transition: 0.3s ease-in-out;
+		transform: scale(1.1);
 	}
 }
 
@@ -129,7 +131,13 @@ main {
 		font-size: 40px;
 
 		a {
+			display: inline-block;
 			color: #00489d;
+		}
+
+		a:hover {
+			transition: 0.3s ease-in-out;
+			transform: scale(1.1);
 		}
 	}
 }
