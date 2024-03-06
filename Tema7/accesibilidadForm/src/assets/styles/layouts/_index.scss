@@ -54,3 +54,29 @@
     }
   }
 }
+
+.main__acordeon {
+  .acordeon__divContenedor {
+    .divContenedor__titulo {
+      background: chartreuse;
+      padding: 1rem;
+
+      @include neo(1, 1em, 1em);
+    }
+
+    .divContenedor__contenido {
+      background-color: blueviolet;
+
+      padding: 0;
+      height: 0;
+      overflow: hidden;
+      transition: al 0.5s ease;
+    }
+  }
+
+  .divContenedor__contenido--activo {
+    padding: 1rem;
+    min-height: 4rem;
+    overflow: auto;
+  }
+}
