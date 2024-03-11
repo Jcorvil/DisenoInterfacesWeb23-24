@@ -1,29 +1,21 @@
 function onIniciar() {
-  // CÓDIGO DEL CARROUSEL
-  // Seleccionamos el nodo con clase carrousel__grande
-  const divCarrouselGrande = document.querySelector(".carrousel__grande");
-  // Añadimos una funcionalidad click a los botones. Seleccionamos TODOS los botones.
-  const botones = document.querySelectorAll(".botones__boton");
+	const divCarrouselGrande = document.querySelector(".carrousel__grande");
+	const flechaIzquierda = document.querySelector(".flecha-izquierda");
+	const flechaDerecha = document.querySelector(".flecha-derecha");
 
-  // Una vez seleccionados los nodos, añadimos el eventListener a TODOS LOS BOTONES
-  botones.forEach((boton, i) => {
-    boton.addEventListener("click", () => {
-      console.log(`Se ha pulsado el botón número ${i}`);
+	let actual = 0;
 
-      // Quitamos la clase css activo a TODOS LOS BOTONES
-      botones.forEach((botonQuitar) => {
-        botonQuitar.classList.remove("activo");
-      });
-      // para luego añadírsela al botón al que se le ha hecho click.
-      boton.classList.add("activo");
+	function desplazarCarrusel(direccion) {
+		const anchoImagen = divCarrouselGrande.offsetWidth / 4;
+		actual =
+			direccion === "izquierda" ? actual + anchoImagen : actual - anchoImagen;
+		divCarrouselGrande.style.transform = `translateX(${actual}px)`;
+	}
 
-      let calculoPx = i * -50;
-
-      console.log(`Click en ${i}: calculo= ${calculoPx}`);
-
-      divCarrouselGrande.style.transform = `translateX(${calculoPx}%)`;
-    });
-  });
+	flechaIzquierda.addEventListener("click", () =>
+		desplazarCarrusel("izquierda")
+	);
+	flechaDerecha.addEventListener("click", () => desplazarCarrusel("derecha"));
 }
 
-window.onload = onIniciar();
+window.onload = onIniciar;

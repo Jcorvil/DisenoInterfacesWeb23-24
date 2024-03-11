@@ -160,7 +160,7 @@ main {
 	overflow: hidden;
 
 	.carrousel__grande {
-		width: 200%;
+		width: 250%;
 		padding: 2em;
 
 		display: flex;
@@ -172,14 +172,23 @@ main {
 		transform: translateX(0%);
 
 		.grande__picture {
-			width: calc(100% / 2);
-			min-height: 10vh;
+			width: calc(100% / 9);
+			height: 50vh;
+			margin: 0 1em 0;
+			background-color: rgba(255, 255, 255, 0.8);
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+				0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			border-radius: 10px;
 
-			margin: 0 2em 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
 
-			img {
-				width: 100%;
-			}
+		.grande__picture img {
+			width: 90%;
+			height: auto;
 		}
 	}
 
@@ -213,4 +222,36 @@ main {
 			background-color: green;
 		}
 	}
+}
+
+.carrousel__flechas {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 10%;
+	transform: translateY(-50%);
+	width: 100%;
+}
+
+.flecha {
+	background: transparent;
+	border: none;
+	font-size: 2rem;
+	color: #000;
+	cursor: pointer;
+	padding: 10px;
+}
+
+.flecha-izquierda {
+	margin-right: 10px;
+}
+
+.flecha-derecha {
+	margin-left: 10px;
+}
+
+.titulos__Inicio {
+	font-family: "Augie";
+	border-bottom: 2px solid black;
 }
