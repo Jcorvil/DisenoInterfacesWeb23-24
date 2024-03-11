@@ -1,4 +1,9 @@
 .index__main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
   .main__picture {
     overflow: hidden;
     max-height: 90vh;
@@ -7,9 +12,71 @@
       width: 100%;
       height: auto;
     }
+  }
 
-    .video {
-      width: minmax(60%, 100%);
+  .main__carrousel {
+    position: relative;
+    width: 90%;
+    max-width: 120em;
+    padding: 2em;
+
+    overflow: hidden;
+
+    .carrousel__grande {
+      width: 200%;
+      padding: 2em;
+
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+
+      transition: all 0.5s ease;
+      transform: translateX(0%);
+
+      .grande__picture {
+        width: calc(100% / 2);
+        min-height: 10vh;
+
+        margin: 0 2em 0;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .carrousel__botones {
+      position: absolute;
+      bottom: 15%;
+      width: 100%;
+      // margin: 1em 0 0;
+      // padding: 0.4em;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+
+      .botones__boton {
+        width: 2em;
+        height: 2em;
+        margin: 1em 1em 0;
+
+        background-color: rgb(254, 248, 240);
+        border: 1px solid black;
+        border-radius: 50%;
+
+        cursor: pointer;
+        transition: all 0.5s ease;
+      }
+
+      .botones__boton:hover {
+        background-color: $ubriWeb-corporate-hover;
+      }
+
+      .activo {
+        background-color: $ubriWeb-corporate;
+      }
     }
   }
 }
@@ -26,29 +93,32 @@
       margin-right: 1em;
       padding: 1em;
       cursor: pointer;
+      transition: all 0.5s ease;
     }
     .botonesTab__pestana:hover {
       background-color: $ubriWeb-corporate-hover;
-      transition: all 0.2s ease;
     }
+
     .activo {
       background-color: $ubriWeb-corporate;
     }
-
     .activo:hover {
-      background-color: $ubriWeb-corporate-hover;
+      background-color: $ubriWeb-corporate;
     }
   }
+
   .tabs__contenedorTexto {
     position: relative;
-    overflow: hodden;
+    overflow: hidden;
     min-height: 20vh;
 
     .contenedorTexto__bloque {
       position: absolute;
       top: 0;
       opacity: 0;
+      transition: all 0.5s ease;
     }
+
     .activo {
       opacity: 1;
     }
@@ -56,27 +126,43 @@
 }
 
 .main__acordeon {
+  background-color: cadetblue;
+  padding: 1em;
+  @include neo(1, 1em, 1em);
+
+  h2,
+  p {
+    margin: 0;
+  }
+
   .acordeon__divContenedor {
+    background-color: chocolate;
+    margin: 0 0 1em;
+    @include neo(1, 1em, 1em);
+
     .divContenedor__titulo {
-      background: chartreuse;
+      background-color: chartreuse;
       padding: 1rem;
+      cursor: pointer;
 
       @include neo(1, 1em, 1em);
     }
 
     .divContenedor__contenido {
       background-color: blueviolet;
-
       padding: 0;
       height: 0;
       overflow: hidden;
-      transition: al 0.5s ease;
-    }
-  }
 
-  .divContenedor__contenido--activo {
-    padding: 1rem;
-    min-height: 4rem;
-    overflow: auto;
+      transition: all 0.5s ease;
+    }
+
+    .divContenedor__contenido--activo {
+      padding: 1rem;
+      min-height: 4rem;
+      overflow: auto;
+
+      transition: all 0.5s ease;
+    }
   }
 }
