@@ -6,10 +6,16 @@ function onIniciar() {
 	let actual = 0;
 
 	function desplazarCarrusel(direccion) {
-		const anchoImagen = divCarrouselGrande.offsetWidth / 4;
+		const anchoElemento = divCarrouselGrande.offsetWidth / 3;
+		const porcentajeDesplazamiento =
+			(anchoElemento / divCarrouselGrande.offsetWidth) * 100;
+
 		actual =
-			direccion === "izquierda" ? actual + anchoImagen : actual - anchoImagen;
-		divCarrouselGrande.style.transform = `translateX(${actual}px)`;
+			direccion == "izquierda"
+				? actual + porcentajeDesplazamiento
+				: actual - porcentajeDesplazamiento;
+
+		divCarrouselGrande.style.transform = `translateX(${actual}%)`;
 	}
 
 	flechaIzquierda.addEventListener("click", () =>
